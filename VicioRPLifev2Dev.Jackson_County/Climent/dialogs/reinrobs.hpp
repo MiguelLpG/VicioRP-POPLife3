@@ -1,0 +1,166 @@
+// $[1.063,["Reinciador",[[0,0,1,1],0.025,0.04,"GUI_GRID"],0,0,0],[1200,"",[1,"Climent\paa\reiniciador.paa",["0.185173 * safezoneW + safezoneX","0.1952 * safezoneH + safezoneY","0.593236 * safezoneW","0.714317 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],[1600,"banco",[1,"Reiniciar Banco",["0.218066 * safezoneW + safezoneX","0.715042 * safezoneH + safezoneY","0.0939779 * safezoneW","0.084147 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],[1601,"blas",[1,"Reiniciar Blas de Lezo",["0.218066 * safezoneW + safezoneX","0.574797 * safezoneH + safezoneY","0.0939779 * safezoneW","0.084147 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],[1602,"mil",[1,"Reiniciar Militar",["0.218066 * safezoneW + safezoneX","0.425203 * safezoneH + safezoneY","0.0939779 * safezoneW","0.084147 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],[1603,"c7",[1,"Reiniciar Club 7",["0.218066 * safezoneW + safezoneX","0.294307 * safezoneH + safezoneY","0.0939779 * safezoneW","0.084147 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],[1604,"manolo",[1,"Reiniciar Manolo",["0.640967 * safezoneW + safezoneX","0.294307 * safezoneH + safezoneY","0.0939779 * safezoneW","0.084147 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],[1605,"paco",[1,"Reiniciar Paco",["0.640967 * safezoneW + safezoneX","0.425203 * safezoneH + safezoneY","0.0939779 * safezoneW","0.084147 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],[1606,"putas",[1,"Reiniciar Casa de Putas",["0.640967 * safezoneW + safezoneX","0.574797 * safezoneH + safezoneY","0.0939779 * safezoneW","0.084147 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],[1607,"tropa",[1,"Reiniciar Tienda de Ropa",["0.640967 * safezoneW + safezoneX","0.715042 * safezoneH + safezoneY","0.0939779 * safezoneW","0.084147 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],[1608,"nuke",[1,"Reiniciar Nuclear",["0.429517 * safezoneW + safezoneX","0.294307 * safezoneH + safezoneY","0.0939779 * safezoneW","0.084147 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],[1609,"Sucurs",[1,"Reiniciar Sucursal",["0.429517 * safezoneW + safezoneX","0.425203 * safezoneH + safezoneY","0.0939779 * safezoneW","0.084147 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],[1610,"hotel",[1,"Reiniciar Hotel Fantasma",["0.429517 * safezoneW + safezoneX","0.574797 * safezoneH + safezoneY","0.0939779 * safezoneW","0.084147 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],[1611,"farma",[1,"Reiniciar Farmacia",["0.429517 * safezoneW + safezoneX","0.715042 * safezoneH + safezoneY","0.0939779 * safezoneW","0.084147 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],[1612,"Rrobos",[1,"Reiniciar Robos (robosactivos = 0)",["0.312044 * safezoneW + safezoneX","0.851548 * safezoneH + safezoneY","0.328923 * safezoneW","0.0467484 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]]
+class desrob
+{
+	idd = -1; // ID del display
+	onLoad = "uiNamespace setVariable ['desrob', _this select 0];"; // esto se lanza al cargar
+	onUnLoad = "uiNamespace setVariable ['desrob', nil]; "; // esto se lanza al descargar
+	
+class controls {////////////////////////////////////////////////////////
+// GUI EDITOR OUTPUT START (by Edu Climent, v1.063, #Nywufo)
+////////////////////////////////////////////////////////
+
+class RscPicture_1200: RscPicture
+{
+	idc = 1200;
+	text = "Climent\paa\reiniciador.paa";
+	x = 0.185173 * safezoneW + safezoneX;
+	y = 0.1952 * safezoneH + safezoneY;
+	w = 0.593236 * safezoneW;
+	h = 0.714317 * safezoneH;
+};
+class banco: RscButton
+{
+	idc = 1600;
+	text = "Reiniciar Banco"; //--- ToDo: Localize;
+	x = 0.218066 * safezoneW + safezoneX;
+	y = 0.715042 * safezoneH + safezoneY;
+	w = 0.0939779 * safezoneW;
+	h = 0.084147 * safezoneH;
+	action = execVM "Climent\scripts\desbugeador_robos\banco.sqf";
+
+};
+class blas: RscButton
+{
+	idc = 1601;
+	text = "Reiniciar Blas de Lezo"; //--- ToDo: Localize;
+	x = 0.218066 * safezoneW + safezoneX;
+	y = 0.574797 * safezoneH + safezoneY;
+	w = 0.0939779 * safezoneW;
+	h = 0.084147 * safezoneH;
+	action = execVM "Climent\scripts\desbugeador_robos\blas.sqf";
+
+};
+class mil: RscButton
+{
+	idc = 1602;
+	text = "Reiniciar Militar"; //--- ToDo: Localize;
+	x = 0.218066 * safezoneW + safezoneX;
+	y = 0.425203 * safezoneH + safezoneY;
+	w = 0.0939779 * safezoneW;
+	h = 0.084147 * safezoneH;
+	action = execVM "Climent\scripts\desbugeador_robos\militar.sqf";
+};
+class c7: RscButton
+{
+	idc = 1603;
+	text = "Reiniciar Club 7"; //--- ToDo: Localize;
+	x = 0.218066 * safezoneW + safezoneX;
+	y = 0.294307 * safezoneH + safezoneY;
+	w = 0.0939779 * safezoneW;
+	h = 0.084147 * safezoneH;
+	action = execVM "Climent\scripts\desbugeador_robos\c7.sqf";
+};
+class manolo: RscButton
+{
+	idc = 1604;
+	text = "Reiniciar Manolo"; //--- ToDo: Localize;
+	x = 0.640967 * safezoneW + safezoneX;
+	y = 0.294307 * safezoneH + safezoneY;
+	w = 0.0939779 * safezoneW;
+	h = 0.084147 * safezoneH;
+	action = execVM "Climent\scripts\desbugeador_robos\manolo.sqf";
+};
+class paco: RscButton
+{
+	idc = 1605;
+	text = "Reiniciar Paco"; //--- ToDo: Localize;
+	x = 0.640967 * safezoneW + safezoneX;
+	y = 0.425203 * safezoneH + safezoneY;
+	w = 0.0939779 * safezoneW;
+	h = 0.084147 * safezoneH;
+	action = execVM "Climent\scripts\desbugeador_robos\paco.sqf";
+};
+class putas: RscButton
+{
+	idc = 1606;
+	text = "Reiniciar Casa Putas"; //--- ToDo: Localize;
+	x = 0.640967 * safezoneW + safezoneX;
+	y = 0.574797 * safezoneH + safezoneY;
+	w = 0.0939779 * safezoneW;
+	h = 0.084147 * safezoneH;
+	action = execVM "Climent\scripts\desbugeador_robos\putas.sqf";
+};
+class tropa: RscButton
+{
+	idc = 1607;
+	text = "Reiniciar Tienda Ropa"; //--- ToDo: Localize;
+	x = 0.640967 * safezoneW + safezoneX;
+	y = 0.715042 * safezoneH + safezoneY;
+	w = 0.0939779 * safezoneW;
+	h = 0.084147 * safezoneH;
+	action = execVM "Climent\scripts\desbugeador_robos\tiendaropa.sqf";
+};
+class nuke: RscButton
+{
+	idc = 1608;
+	text = "Reiniciar Nuclear"; //--- ToDo: Localize;
+	x = 0.429517 * safezoneW + safezoneX;
+	y = 0.294307 * safezoneH + safezoneY;
+	w = 0.0939779 * safezoneW;
+	h = 0.084147 * safezoneH;
+	action = execVM "Climent\scripts\desbugeador_robos\nuclear.sqf";
+};
+class Sucurs: RscButton
+{
+	idc = 1609;
+	text = "Reiniciar Sucursal"; //--- ToDo: Localize;
+	x = 0.429517 * safezoneW + safezoneX;
+	y = 0.425203 * safezoneH + safezoneY;
+	w = 0.0939779 * safezoneW;
+	h = 0.084147 * safezoneH;
+	action = execVM "Climent\scripts\desbugeador_robos\sucurs.sqf";
+};
+class hotel: RscButton
+{
+	idc = 1610;
+	text = "Reiniciar Hotel"; //--- ToDo: Localize;
+	x = 0.429517 * safezoneW + safezoneX;
+	y = 0.574797 * safezoneH + safezoneY;
+	w = 0.0939779 * safezoneW;
+	h = 0.084147 * safezoneH;
+	action = execVM "Climent\scripts\desbugeador_robos\hotel.sqf";
+};
+class farma: RscButton
+{
+	idc = 1611;
+	text = "Reiniciar Farmacia"; //--- ToDo: Localize;
+	x = 0.429517 * safezoneW + safezoneX;
+	y = 0.715042 * safezoneH + safezoneY;
+	w = 0.0939779 * safezoneW;
+	h = 0.084147 * safezoneH;
+	action = execVM "Climent\scripts\desbugeador_robos\farmacia.sqf";
+};
+class Rrobos: RscButton
+{
+	idc = 1612;
+	text = "Reiniciar Robos (robosactivos = 0)"; //--- ToDo: Localize;
+	x = 0.312044 * safezoneW + safezoneX;
+	y = 0.851548 * safezoneH + safezoneY;
+	w = 0.328923 * safezoneW;
+	h = 0.0467484 * safezoneH;
+	action = execVM "Climent\scripts\desbugeador_robos\reiniciador_poli.sqf";
+};
+////////////////////////////////////////////////////////
+// GUI EDITOR OUTPUT END
+////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+	};
+
+};
+

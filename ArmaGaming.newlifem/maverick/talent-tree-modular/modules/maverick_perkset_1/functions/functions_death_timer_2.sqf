@@ -1,1 +1,0 @@
-AnzusLife_DeathSpeed = 1.5;

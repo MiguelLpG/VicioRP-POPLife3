@@ -1,1 +1,0 @@
-AnzusLife_ProcessPrice = 0.5;
