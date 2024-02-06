@@ -1,0 +1,35 @@
+/*%FSM<COMPILE "scriptedFSM.cfg, Life Client FSM">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Main_Init",0,250,-40.348839,-141.279068,49.651161,-91.279068,0.000000,"Main Init"};
+globals[] = {0.000000,0,0,0,0,640,480,1,26,6316128,1,-358.924988,271.146088,44.360962,-142.314362,1880,557,1};
+window[] = {2,-1,-1,-1,-1,922,104,1544,104,3,575};
+*//*%FSM</HEAD>*/
+class FSM
+{
+        fsmName = "Life Client FSM";
+        class States
+        {
+                /*%FSM<STATE "Main_Init">*/
+                class Main_Init
+                {
+                        name = "Main_Init";
+                        itemno = 0;
+                        init = /*%FSM<STATEINIT""">*/"private[""_lastcheck"",""_food"",""_water"",""_lastsync""];" \n
+                         "_lastcheck = time;" \n
+                         "_food = time;" \n
+                         "_water = time;" \n
+                         "_lastsync = time;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+        };
+        initState="Main_Init";
+        finalStates[] =
+        {
+        };
+};
+/*%FSM</COMPILE>*/

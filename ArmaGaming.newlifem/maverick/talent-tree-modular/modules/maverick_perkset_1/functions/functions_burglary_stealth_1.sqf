@@ -1,0 +1,1 @@
+AnzusLife_AlarmChance = 50;
