@@ -1,22 +1,27 @@
 /*
         File: fn_insertRequest.sqf
         Author: Bryan "Tonic" Boardwine
-
+        Security edit: McIvan
+        
         Description:
         Does something with inserting... Don't have time for
         descriptions... Need to write it...
 */
-private["_uid","_name","_side","_money","_bank","_licenses","_handler","_thread","_queryResult","_query","_alias"];
-_uid = [_this,0,"",[""]] call BIS_fnc_param;
-_name = [_this,1,"",[""]] call BIS_fnc_param;
-_money = [_this,2,0,[""]] call BIS_fnc_param;
-//_bank = [_this,3,30000,[""]] call BIS_fnc_param;
-_bank = [_this,3,85000,[""]] call BIS_fnc_param;
-_returnToSender = [_this,4,ObjNull,[ObjNull]] call BIS_fnc_param;
+
+private["_uid","_name","_side","_money","_bank","_licenses","_handler","_thread","_queryResult","_query","_alias","_query1"];
+if (!isRemoteExecuted) exitWith {};
+if (remoteExecutedOwner isEqualTo 0) exitWith {};
+private _players = allPlayers select {(owner _x) isEqualTo remoteExecutedOwner};
+if (_players isEqualTo []) exitWith {};
+private _player = _players select 0;
+_uid = getplayeruid _player;
+_name = _player getvariable ["realname",name _player];
+_money = 0;
+_bank = 85000;
 
 //Error checks
-if((_uid == "") OR (_name == "")) exitWith {systemChat "Bad UID or name";}; //Let the client be 'lost' in 'transaction'
-if(isNull _returnToSender) exitWith {systemChat "ReturnToSender is Null!";}; //No one to send this to!
+if((_uid == "") OR (_name == "")) exitWith {systemChat "Bad UID or name";};
+if(isNull _player) exitWith {systemChat "ReturnToSender is Null!";}; 
 
 _query = format["GetPlayerIDName:%1",_uid];
 
@@ -24,17 +29,10 @@ waitUntil{sleep (random 0.3); !DB_Async_Active};
 _tickTime = diag_tickTime;
 _queryResult = [_query,2] call DB_fnc_asyncCall;
 
-//Double check to make sure the client isn't in the database...
-if(typeName _queryResult == "STRING") exitWith {
-[] remoteexec ["SOCK_fnc_dataQuery",(owner _returnToSender)];
-}; //There was an entry!
-if(count _queryResult != 0) exitWith {
-[] remoteexec ["Sock_fnc_dataquery",(owner _returnToSender)];
-};
+if(typeName _queryResult == "STRING") exitWith {[] remoteExecCall ["Sock_fnc_dataquery",(owner _player)];}; 
+if(count _queryResult != 0) exitWith {[] remoteExecCall ["Sock_fnc_dataquery",(owner _player)];};
 
-
-//Clense and prepare some information.
-_name = [_name] call DB_fnc_mresString; //Clense the name of bad chars.
+_name = [_name] call DB_fnc_mresString;
 _alias = [[_name]] call DB_fnc_mresArray;
 _money = [_money] call DB_fnc_numberSafe;
 _bank = [_bank] call DB_fnc_numberSafe;

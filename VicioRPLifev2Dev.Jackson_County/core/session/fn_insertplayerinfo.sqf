@@ -10,4 +10,4 @@ titleText [localize "STR_Session_QueryFail","PLAIN"];
 // 0 cutFadeOut 9999999;
 profilenamespace setvariable ["noiposci", nil];
 
-[getPlayerUID player,profileName,vicio_din,vicio_atmdin,player] remoteexeccall ["DB_fnc_insertRequest",2];
+0 remoteexeccall ["DB_fnc_insertRequest",2]; // Como nadie se mete al server, insertamos manualmente
