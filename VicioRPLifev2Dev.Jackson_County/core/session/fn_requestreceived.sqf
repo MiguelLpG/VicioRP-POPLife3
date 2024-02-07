@@ -70,7 +70,9 @@ if(count (_this select 6) > 0) then {
 };*/
 
 life_gear = _this select 8;
-[true] call life_fnc_loadGear;
+//DaniVillas estuvo aqui  [true] call life_fnc_loadGear; 
+[] spawn ica_fnc_AntiDupeSystem;
+
 
 if(count (_this select 9) > 0) then {
 	experiencia = _this select 9;
@@ -122,7 +124,7 @@ switch(playerSide) do {
 	case east: {
 		__CONST__(life_opLevel,parseNumber(_this select 7));
 		op_gear = _this select 8;
-		[] spawn life_fnc_loadGearop;
+		//DaniVillas estuvo aqui  [] spawn life_fnc_loadGearop;
 		__CONST__(life_copLevel,0);
 		__CONST__(life_medicLevel,0);
 	};

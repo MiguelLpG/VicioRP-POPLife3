@@ -54,6 +54,18 @@ class master_funcionesica
 		class consola {};
 	};
 
+	class DaniVillasPlayerProfileSystem {
+		file = "\villas_server\DaniVillas\PlayerProfileSystem";
+		class PlayerProfileSystem {};
+	}
+
+	class DaniVillasClient {
+		file = "\villas_server\DaniVillas\ClientSystem";
+		class antiDupeSystem {};
+	}
+
+
+
 	class medelRobos
 	{
 		file = "\villas_server\medel\robos";

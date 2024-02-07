@@ -7,6 +7,7 @@ if(!hasInterface) exitWith {};
 
 __CONST__(BIS_fnc_endMission,BIS_fnc_endMission);
 
+
 [true] spawn ica_fnc_vistaBonita;
 
 player setVariable ['QS_seated',FALSE];
@@ -39,4 +40,3 @@ if (vehicle player == player) then {
 };
 setTerrainGrid 50;
 player setTerrainGrid 50;
-

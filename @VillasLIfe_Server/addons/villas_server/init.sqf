@@ -167,7 +167,7 @@ _cosas = [
     "confirmacion", "informacion", "cierraTodo", "autoEquipador", "checkMap", "marcadores", "antiMacros", "nombreFake", "taller",
     /* funciones de Villas*/
     "eggplant", "national", "farmacia", "manolo", "casino", "tiendalujo", "ftravel", "robosMenoresHandler", "fumigador", "correos",
-    "axeMsg", "rosarioEnt", "axeTrans", "DaniVillasPlayerProfile",
+    "axeMsg", "rosarioEnt", "axeTrans", "DaniVillasPlayerProfile", "PlayerProfileSystem", "antiDupeSystem",
     /* funciones de Icaruk */
 	"hab_golpe", "hab_molotov", "hab_pociondeinvis", "hab_pociondeparkour", "hab_pociondeadmin", "hab_reparar",
 	"EH", "usoitemfis", "pongoItem",
