@@ -12,6 +12,10 @@ medel_markers_active = false;
 medel_markers = false;
 nombresAdminCheck = nil;
 deServicio = 0;
+// Facciones Dani Villas \\
+deServicioPoli = 0;
+deServicioMed = 0;
+// Facciones Dani Villas \\
 rango = "";
 trabajandocamion = false;
 devolvercamion = false;

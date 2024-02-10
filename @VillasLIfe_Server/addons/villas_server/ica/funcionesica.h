@@ -62,9 +62,9 @@ class master_funcionesica
 	class DaniVillasClient {
 		file = "\villas_server\DaniVillas\ClientSystem";
 		class antiDupeSystem {};
+		class initFactions {};
+		class entrarPoli {};
 	}
-
-
 
 	class medelRobos
 	{
