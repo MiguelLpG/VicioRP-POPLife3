@@ -14,7 +14,7 @@ class camionesedu {
 class fondo: RscPicture
 {
 	idc = 1200;
-	text = "Climent\paa\BackGround_Camiones.paa";
+	text = "VillasLifeCore\images\climent\BackGround_Camiones.paa";
 	x = 0.135836 * safezoneW + safezoneX;
 	y = 0.0792647 * safezoneH + safezoneY;
 	w = 0.698961 * safezoneW;

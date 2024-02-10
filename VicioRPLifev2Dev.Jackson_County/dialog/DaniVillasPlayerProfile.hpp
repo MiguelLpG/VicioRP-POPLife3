@@ -15,7 +15,7 @@ class newPlayerProfile
 		class backgroundImg: RscPicture
 		{
 			idc = 1200;
-			text = "icons\NewPlayerProfile.paa";
+			text = "\VillasLifeCore\images\villas\NewPlayerProfile.paa";
 			x = 0.288594 * safezoneW + safezoneX;
 			y = 0.137 * safezoneH + safezoneY;
 			w = 0.422812 * safezoneW;

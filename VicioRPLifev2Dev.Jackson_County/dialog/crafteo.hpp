@@ -38,7 +38,7 @@ class Crafteo
 class CraftRscPicture_1001: RscPicture
 {
 	idc = 1200;
-	text = "icons\img\fondocraft.paa";
+	text = "\VillasLifeCore\images\fondoCraft.paa";
 	x = 0.154428 * safezoneW + safezoneX;
 	y = 0.13722 * safezoneH + safezoneY;
 	w = 0.402187 * safezoneW;
@@ -48,7 +48,7 @@ class CraftRscActivePicture_1002: RscActivePicture
 {
 	idc = 5039;
 
-	text = "icons\img\botoncraft.paa"; //--- ToDo: Localize;
+	text = "\VillasLifeCore\images\botonCraft.paa"; //--- ToDo: Localize;
 	x = 0.344694 * safezoneW + safezoneX;
 	y = 0.625673 * safezoneH + safezoneY;
 	w = 0.0979687 * safezoneW;

@@ -14,6 +14,7 @@ waitUntil{!isNull findDisplay 46}; //Espera a que se cargue la misión
 waitUntil{!isNil "vicio_din"}; 
 waitUntil {life_session_completed};
 
+	if(playerSide != CIVILIAN) exitWith {"[DaniVillas AntiDupeSystem] Jugador no es civil."}
 
 	// Esto lo que hace es que cuando entras te carga la equipación DE CIVIL
 	_PlayerEquip = profileNamespace getVariable ["DaniVillas_DataSync_19281272316346", getUnitLoadout player]; //getUnitLoadout player por si es su primera vez.

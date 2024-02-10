@@ -14,7 +14,7 @@ class controls {////////////////////////////////////////////////////////
 class fondo: RscPicture
 {
 	idc = 1200;
-	text = "Climent\paa\moisesarmas.paa";
+	text = "VillasLifeCore\images\climent\moisesarmas.paa";
 	x = 0.225 * safezoneW + safezoneX;
 	y = 0.225575 * safezoneH + safezoneY;
 	w = 0.55 * safezoneW;

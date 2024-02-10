@@ -13,7 +13,6 @@ if (_param isEqualTo "menu") exitWith {
 
 	if (playerSide != west) exitWith {hint "Solo hago caso a la policia. ¡Fuera de aqui muerto de hambre!"};
 
-	createDialog "autoEquipador";
 
 	disableSerialization;
 };

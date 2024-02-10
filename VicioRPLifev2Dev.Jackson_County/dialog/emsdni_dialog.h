@@ -25,7 +25,7 @@ class EMSDNI_dialog
 		class Picture: AkrPicture
 		{
 			idc = 1500;
-			text = "Climent\paa\dniems.paa";
+			text = "VillasLifeCore\images\climent\dniems.paa";
 			x = 0.669764 * safezoneW + safezoneX;
 			y = 0.0240253 * safezoneH + safezoneY;
 			w = 0.293229 * safezoneW;

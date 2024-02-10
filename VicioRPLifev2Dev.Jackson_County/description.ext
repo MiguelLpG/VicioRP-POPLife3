@@ -2,7 +2,7 @@
 author = "Villas, VicioRP";
 onLoadName = "VicioRP || POP 3";
 onLoadMission = "VicioRP || POP 3";
-loadScreen = "medel\imagenes\logo.paa";
+loadScreen = "\VillasLifeCore\logoServidor.paa";
 joinUnassigned = 1;
 respawn = BASE;
 respawndelay = 5;
@@ -76,25 +76,6 @@ class CfgFunctions
 	#include "ica\funcionesica.h"
 	#include "VVS\Functions.h"
 	#include "CodePlus\cplus_masterFunctions.cpp"
-};
-
-class CfgSounds
-{
-	sounds[] = {};
-
-	class purge
-    {
-        name = "purge";
-        sound[] = {"\sounds\la_purga.ogg",1.0,1.0};
-        titles[] = {};
-    };
-
-	class cinturon
-    {
-        name = "cinturon";
-        sound[] = {"\sounds\cinturon.ogg",1.0,1.0};
-        titles[] = {};
-    };
 };
 
 class CfgDebriefing

@@ -10,7 +10,7 @@ class automafia {
 class fondo: RscPicture
 {
 	idc = 1200;
-	text = "Climent\paa\autoequipador_mafias.paa";
+	text = "VillasLifeCore\images\climent\autoequipador_mafias.paa";
 	x = 0.045 * safezoneW + safezoneX;
 	y = -0.335195 * safezoneH + safezoneY;
 	w = 0.95375 * safezoneW;

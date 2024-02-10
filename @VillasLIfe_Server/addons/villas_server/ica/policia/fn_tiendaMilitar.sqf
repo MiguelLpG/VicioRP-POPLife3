@@ -61,7 +61,6 @@ if (_param isEqualTo "menu") exitWith {
     disableSerialization;
 	createDialog "tiendaMafia";
 	_ui = uiNameSpace getVariable "tiendaMafia";
-	ctrlSetText [5005, "medel\imagenes\tiendaMilitar.paa"];
 	_lista = (_ui displayCtrl 5007);
 	_nivel = call life_coplevel;
 

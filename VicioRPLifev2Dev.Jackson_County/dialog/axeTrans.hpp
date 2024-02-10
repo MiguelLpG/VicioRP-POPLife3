@@ -173,7 +173,7 @@ class axeTrans {
 		{
 			idc = 1200;
 
-			text = "axex\axeTransporte.paa";
+			text = "\VillasLifeCore\images\axe\axeTransporte.paa";
 			x = 0.226719 * safezoneW + safezoneX;
 			y = 0.027 * safezoneH + safezoneY;
 			w = 0.548114 * safezoneW;
@@ -202,7 +202,7 @@ class axeTrans {
 		{
 			idc = 6048;
 
-			text = "axex\botonPuja.paa"; //--- ToDo: Localize;
+			text = "\VillasLifeCore\images\axe\botonPuja.paa"; //--- ToDo: Localize;
 			x = 0.4175 * safezoneW + safezoneX;
 			y = 0.61 * safezoneH + safezoneY;
 			w = 0.171698 * safezoneW;

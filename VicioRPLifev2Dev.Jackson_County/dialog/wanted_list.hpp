@@ -6,7 +6,7 @@ class life_wanted_menu {
 
 	class controlsBackground {
 		class Life_RscTitleBackground:RscPicture {
-		text = "Villas\PDA.paa";
+		text = "\VillasLifeCore\images\poli\PDA.paa";
 			x = 0.184931 * safezoneW + safezoneX;
 			y = 0.140043 * safezoneH + safezoneY;
 			w = 0.618794 * safezoneW;

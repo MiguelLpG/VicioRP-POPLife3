@@ -25,7 +25,7 @@ class DNI_dialog
 		class Picture: AkrPicture
 		{
 			idc = 1200;
-			text = "Climent\paa\dni2.paa";
+			text = "VillasLifeCore\images\climent\dni2.paa";
 			x = 0.669764 * safezoneW + safezoneX;
 			y = 0.0240253 * safezoneH + safezoneY;
 			w = 0.293229 * safezoneW;

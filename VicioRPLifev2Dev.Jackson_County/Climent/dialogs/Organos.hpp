@@ -13,7 +13,7 @@ class controls {////////////////////////////////////////////////////////
 class fondo: RscPicture
 {
 	idc = 1200;
-	text = "Climent\paa\FONDoorg.paa";
+	text = "VillasLifeCore\images\climent\FONDoorg.paa";
 	x = 0.26625 * safezoneW + safezoneX;
 	y = 0.225575 * safezoneH + safezoneY;
 	w = 0.48125 * safezoneW;
@@ -22,7 +22,7 @@ class fondo: RscPicture
 class ojo: RscPicture
 {
 	idc = 1201;
-	text = "Climent\paa\ojosico.paa";
+	text = "VillasLifeCore\images\climent\ojosico.paa";
 	x = 0.28 * safezoneW + safezoneX;
 	y = 0.368276 * safezoneH + safezoneY;
 	w = 0.12375 * safezoneW;
@@ -31,7 +31,7 @@ class ojo: RscPicture
 class estom: RscPicture
 {
 	idc = 1202;
-	text = "Climent\paa\estomago.paa";
+	text = "VillasLifeCore\images\climent\estomago.paa";
 	x = 0.410625 * safezoneW + safezoneX;
 	y = 0.357299 * safezoneH + safezoneY;
 	w = 0.17875 * safezoneW;
@@ -40,7 +40,7 @@ class estom: RscPicture
 class corazon: RscPicture
 {
 	idc = 1203;
-	text = "Climent\paa\corazonico.paa";
+	text = "VillasLifeCore\images\climent\corazonico.paa";
 	x = 0.59625 * safezoneW + safezoneX;
 	y = 0.379253 * safezoneH + safezoneY;
 	w = 0.12375 * safezoneW;

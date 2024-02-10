@@ -88,7 +88,7 @@ if (_param isEqualTo "menu") exitWith {
 			_ctrls = [_i1, _i2, _i3, _i4, _i5, _i6];
 		};
 	};
-	_ruta = "icons\menuY\";
+	_ruta = "\VillasLifeCore\images\MenuY\";
 
 	{
 		_x ctrlSetPosition [((ctrlPosition _x) select 0) + 0.1, (ctrlPosition _x) select 1, (ctrlPosition _x) select 2, (ctrlPosition _x) select 3];

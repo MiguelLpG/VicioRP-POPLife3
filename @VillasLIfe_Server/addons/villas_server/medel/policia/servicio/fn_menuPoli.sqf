@@ -36,7 +36,7 @@ switch (_tipo) do {
     case 0 : {
         (_display displayCtrl 1000) ctrlSetStructuredText parseText format ["<t align = 'center' size='1.7' shadow='0' font='RobotoCondensedBold' color='#0f0f23'>%1</t>","Policia"];
 
-        (_display displayCtrl 8001) ctrlSetText "fotos\policia\policias.paa";
+        (_display displayCtrl 8001) ctrlSetText "\VillasLifeCore\images\poli\policias.paa";
 		if (PoliON >= 1) then {_list lbAdd "Policias de Servicio"};
        // PoliON = 0;
         {
