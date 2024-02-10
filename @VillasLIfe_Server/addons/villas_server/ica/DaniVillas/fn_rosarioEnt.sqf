@@ -12,6 +12,9 @@ if (_p isEqualTo "init") exitWith {
     //Acciones de inicio
 	[NPC_ROSARIO_MISIONES_2, [".::: Transporte de Drogas ::: Rosario Enterprise", {["drogas"] call ica_fnc_rosarioEnt}]] remoteExec ["addAction", 0,true];
 	[NPC_ROSARIO_MISIONES_2, [".::: Transporte de Armas ::: Rosario Enterprise", {["armas"] call ica_fnc_rosarioEnt}]] remoteExec ["addAction", 0,true];
+	[NPC_ROSARIO_MISIONES_4, [".::: Transporte de Drogas ::: Rosario Enterprise", {["drogas"] call ica_fnc_rosarioEnt}]] remoteExec ["addAction", 0,true];
+	[NPC_ROSARIO_MISIONES_4, [".::: Transporte de Armas ::: Rosario Enterprise", {["armas"] call ica_fnc_rosarioEnt}]] remoteExec ["addAction", 0,true];
+
 
 	[zona_1, ["Entregar Droga .:: Rosario Enterprise ::.", {["entrega"] call ica_fnc_rosarioEnt},nil,6,true,true,"","_target in (profileNamespace getVariable [""npcsRosario"",[]])"]] remoteExec ["addAction", 0,true];
 	[zona_2, ["Entregar Droga .:: Rosario Enterprise ::.", {["entrega"] call ica_fnc_rosarioEnt},nil,6,true,true,"","_target in (profileNamespace getVariable [""npcsRosario"",[]])"]] remoteExec ["addAction", 0,true];
@@ -71,8 +74,8 @@ if (_p isEqualTo "drogas") exitWith {
 
 	if(!isNil "_accion" && {!_accion}) exitWith {titleText["Trabajo Cancelado...","PLAIN"];};
 
-	if (pop_din < 35000) exitWith {titleText["No tienes suficiente dinero para comprar la droga.", "PLAIN"]};
-	pop_din = pop_din - 35000;
+	if (vicio_din < 35000) exitWith {titleText["No tienes suficiente dinero para comprar la droga.", "PLAIN"]};
+	vicio_din = vicio_din - 35000;
 
 	_npcs = selectRandom [[zona_1,NPC_ROBOS_MENORES_NARCO_1,tienda_terro],[zona_3,tienda_terro,zona_4],[tienda_bf,camello,zona_1],[NPC_ROBOS_MENORES_NARCO_1,zona_2,NPC_ROBOS_MENORES_RICOS_1]];
 
@@ -156,8 +159,8 @@ if (_p isEqualTo "armas") exitWith {
 
 	if(!isNil "_accion" && {!_accion}) exitWith {titleText["Trabajo Cancelado...","PLAIN"];};
 
-	if (pop_din < 36000) exitWith {titleText["No tienes suficiente dinero para comprar las armas.", "PLAIN"]};
-	pop_din = pop_din - 36000;
+	if (vicio_din < 36000) exitWith {titleText["No tienes suficiente dinero para comprar las armas.", "PLAIN"]};
+	vicio_din = vicio_din - 36000;
 	profileNamespace setVariable ["rosarioEntregadosA",0];
 	_npcs = selectRandom [[zona_1,zona_3,zona_4],[zona_3,tienda_terro,zona_1],[tienda_bf,zona_2,zona_1],[zona_3,zona_2,zona_4]];
 
@@ -306,8 +309,8 @@ if (_p isEqualTo "cobroA") exitWith {
 	profileNamespace setVariable ["rosarioAok",false];
 	profileNamespace setVariable ["rosarioPagaA",false];
 	profileNamespace setVariable ["rosarioEntregadosA",0];
-	[format["%1 - Ha entregado el paquete de armas. Recibió %2 € y %3 de experiencia.", getPlayerUID player, _pago, _exp, pop_din, pop_atmdin], "Hacks"] remoteExecCall ["A3Log", 2];
-	pop_din = pop_din + _pago;
+	[format["%1 - Ha entregado el paquete de armas. Recibió %2 € y %3 de experiencia.", getPlayerUID player, _pago, _exp, vicio_din, vicio_atmdin], "Hacks"] remoteExecCall ["A3Log", 2];
+	vicio_din = vicio_din + _pago;
 	["exp",_exp] call ica_fnc_arrayexp;
 
 	[format ["+ %1exp", _exp]] call ica_fnc_infolog;
@@ -351,8 +354,8 @@ if (_p isEqualTo "cobro") exitWith {
 	profileNamespace setVariable ["rosarioEnt",false];
 	profileNamespace setVariable ["rosariook",false];
 	profileNamespace setVariable ["rosarioPaga",false];
-	[format["%1 - Ha entregado el paquete de drogas. Recibió %2 € y %3 de experiencia.", getPlayerUID player, _pago, _exp, pop_din, pop_atmdin], "Hacks"] remoteExecCall ["A3Log", 2];
-	pop_din = pop_din + _pago;
+	[format["%1 - Ha entregado el paquete de drogas. Recibió %2 € y %3 de experiencia.", getPlayerUID player, _pago, _exp, vicio_din, vicio_atmdin], "Hacks"] remoteExecCall ["A3Log", 2];
+	vicio_din = vicio_din + _pago;
 	["exp",_exp] call ica_fnc_arrayexp;
 
 	[format ["+ %1exp", _exp]] call ica_fnc_infolog;
@@ -404,7 +407,7 @@ if(_a getvariable "entregueYa") exitWith {hint "Ya has entregado en este NPC, no
 	_exp = round (random [1,3,4]);
 	_pago = round (random [5000,7500,10000]);
 
-	pop_din = pop_din + _pago;
+	vicio_din = vicio_din + _pago;
 	["exp",1] call ica_fnc_arrayexp;
 
 	[format ["+ %1exp", 1]] call ica_fnc_infolog;
@@ -459,7 +462,7 @@ if (_p isEqualTo "entregaA") exitWith {
 	_exp = round (random [1,3,4]);
 	_pago = round (random [5000,7500,10000]);
 
-	pop_din = pop_din + _pago;
+	vicio_din = vicio_din + _pago;
 	["exp",1] call ica_fnc_arrayexp;
 
 	[format ["+ %1exp", 1]] call ica_fnc_infolog;

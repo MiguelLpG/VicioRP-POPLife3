@@ -1,7 +1,7 @@
 // By FuRixX Lamborghini \\
 
 _variables = [
-	["pop_din", "pop_atmdin", 50000]
+	["vicio_din", "vicio_atmdin", 50000]
 ];
 
 Checker = {
@@ -41,7 +41,7 @@ Checker = {
 };
 
 waitUntil{!isNull findDisplay 46};
-waitUntil{!isNil "pop_din"};
+waitUntil{!isNil "vicio_din"};
 waitUntil{([] call FuRixX_fnc_TiempoConectado) > 0.2};
 waitUntil {life_session_completed};
 

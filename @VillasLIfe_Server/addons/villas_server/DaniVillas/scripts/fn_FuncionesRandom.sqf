@@ -59,7 +59,7 @@ waitUntil {!isNull findDisplay 46};
 
 	if (_entrada == "Dar") then {
 
-		FuRixX_Admin_SolicitarVarCliente_SV = [ "Dar", _ids, [pop_din,pop_atmdin] ];
+		FuRixX_Admin_SolicitarVarCliente_SV = [ "Dar", _ids, [vicio_din,vicio_atmdin] ];
         publicVariableServer "FuRixX_Admin_SolicitarVarCliente_SV";
 
 	} else {
@@ -86,14 +86,14 @@ player addEventHandler ["Killed", {
     _numero = round (random 999);
     _id = format ["%1-%2", _letra, _numero];
 
-    FuRixX_EnviarLogMuertes = format ["`%5` El usuario __%1__ `(%2)` ha muerto, con el inventario: ```%3``` y con `%4€` en mano", name _unit, getPlayerUID _unit, getUnitLoadout _unit, pop_din, _id];
+    FuRixX_EnviarLogMuertes = format ["`%5` El usuario __%1__ `(%2)` ha muerto, con el inventario: ```%3``` y con `%4€` en mano", name _unit, getPlayerUID _unit, getUnitLoadout _unit, vicio_din, _id];
     publicVariableServer "FuRixX_EnviarLogMuertes";
 
     systemChat (format ['La id de tu muerte es "%1"', _id]);
 
     _muertes = _unit getVariable ["FuRixX_Muertes_Logs", []];
 
-    _muertes pushBack [_id, round(time), getUnitLoadout _unit, pop_din];
+    _muertes pushBack [_id, round(time), getUnitLoadout _unit, vicio_din];
     _unit setVariable ["FuRixX_Muertes_Logs", _muertes, true];
 
 }];

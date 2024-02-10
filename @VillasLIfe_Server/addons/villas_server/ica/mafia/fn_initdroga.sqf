@@ -16,7 +16,7 @@ waitUntil {!isNil {camMet}};
 		if !(camHer <= 0) then {camHer = camHer - _n};
 		if !(camCoc <= 0) then {camCoc = camCoc - _n};
 		if !(camMet <= 0) then {camMet = camMet - _n};
-		
+
 		sleep (60 * 20);
 	};
 };
@@ -24,68 +24,60 @@ waitUntil {!isNil {camMet}};
 // Opio
 0 spawn {
 	private ["_cajas", "_contenidoCajas"];
-	_cajas = [cajaOpio1, cajaOpio2, cajaOpio3, cajaOpio4, cajaOpio5,
-	cajaOpio6, cajaOpio7, cajaOpio8, cajaOpio9, cajaOpio10,
-	cajaOpio11, cajaOpio12, cajaOpio13, cajaOpio14, cajaOpio15, cajaOpio16,cajaopio14_1,cajaopio14_2,cajaopio14_3];
+	_cajas = [cajaOpio1, cajaOpio2, cajaopio3, cajaOpio5, cajaOpio6];
 
 	while {true} do {
 		_contenidoCajas = [];
 		{_contenidoCajas = _contenidoCajas + magazineCargo _x} forEach _cajas;
-		_opio = {"pop_opio_b" == _x} count _contenidoCajas;
-		
-		if (_opio < 100) then {
+		_opio = {"pop_opio_b"  isEqualTo  _x} count _contenidoCajas;
+
+		if (_opio < 30) then {
 			for "_x" from 0 to 30 do {
-				(_cajas call BIS_fnc_selectRandom) addItemCargoGlobal ["pop_opio_b", 1];
+				(_cajas call BIS_fnc_selectRandom) addItemCargoGlobal ["pop_opio_b", 2];
 			};
 		};
-		
-		{_x animate ["door1", 0]} forEach [contenedores4, contenedores5, contenedores6,contenedores1_1,contenedores1_2,contenedores1_3];
-		
-		sleep (60 * 30);
+
+		{_x animate ["door1", 0]} forEach [contenedores4, contenedores5, contenedores6];
+
+		sleep (60 * 25);
 	};
 };
-
 
 // Coca
 0 spawn {
 	private ["_cajas", "_contenidoCajas"];
-	_cajas = [cajacoca1, cajacoca2, cajacoca3,cajacoca2_1,cajacoca2_2,cajacoca2_3];
+	_cajas = [cajacoca1, cajacoca2, cajacoca3, cajacoca4, cajacoca6];
 
 	while {true} do {
 		_contenidoCajas = [];
 		{_contenidoCajas = _contenidoCajas + magazineCargo _x} forEach _cajas;
-		_coca = {"pop_coca_b" == _x} count _contenidoCajas;
-		
+		_coca = {"pop_coca_b"  isEqualTo  _x} count _contenidoCajas;
+
 		if (_coca < 80) then {
 			for "_x" from 0 to 20 do {
-				(_cajas call BIS_fnc_selectRandom) addItemCargoGlobal ["pop_coca_b", 1];
+				(_cajas call BIS_fnc_selectRandom) addItemCargoGlobal ["pop_coca_b", 2];
 			};
 		};
 		// {_x setVariable ["cerrado", true, true]} forEach _cajas;
-		{_x animate ["door1", 0]} forEach [contenedores1, contenedores2, contenedores3,contenedores1_1,contenedores1_2,contenedores1_3];
-		
-		sleep (60 * 30);
+		{_x animate ["door1", 0]} forEach [contenedores1, contenedores2, contenedores3, contenedores7, contenedores8];
+
+		sleep (60 * 25);
 	};
 };
 
 // Efedrina
 0 spawn {
 	private ["_cajas", "_contenidoCajas"];
-	_cajas = [cajaHospital];
+	_cajas = [cajaHospital,cajaHospital2,cajaHospital3,cajaHospital4];
 
 	while {true} do {
 		_contenidoCajas = [];
 		{_contenidoCajas = _contenidoCajas + magazineCargo _x} forEach _cajas;
-		_efe = {"pop_efedrina_b" == _x} count _contenidoCajas;
-		
+		_efe = {"pop_efedrina_b" isEqualTo _x} count _contenidoCajas;
+
 		if (_efe < 80) then {
-			(_cajas call BIS_fnc_selectRandom) addItemCargoGlobal ["pop_efedrina_b", 20];
+			(_cajas call BIS_fnc_selectRandom) addItemCargoGlobal ["pop_efedrina_b", 30];
 		};
-		// {_x setVariable ["cerrado", true, true]} forEach _cajas;
-		
-		sleep (60 * 20);
+		sleep (60 * 25);
 	};
 };
-
-
-	

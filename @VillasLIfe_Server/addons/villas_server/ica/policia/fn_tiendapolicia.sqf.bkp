@@ -13,8 +13,8 @@ _tiendaLVL0 = [
 
 _tiendaComun = [
 	["----- Equipamiento Básico -----", 0],
-	["Taser_26",500],
-	["26_cartridge",50],
+	["CSW_M26C",500],
+	["CSW_Taser_Probe_Mag",50],
 	["Orel_Matraque",500],
 	["pop_linterna",500],
 	["Binocular",500],

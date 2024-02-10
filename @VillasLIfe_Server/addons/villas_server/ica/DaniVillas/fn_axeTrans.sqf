@@ -483,7 +483,7 @@ if (_p isEqualTo "entrega") exitWith {
 	_exp = round (random [8,10,20]);
 	_pago = _dinero * _tengo;
 	
-	pop_din = pop_din + _pago;
+	vicio_din = vicio_din + _pago;
 	["exp",_exp] call ica_fnc_arrayexp;
 	
 	[format ["EXP + %1", _exp]] call ica_fnc_infolog;

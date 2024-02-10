@@ -44,7 +44,7 @@ if (_param isEqualTo "pistola") exitWith {
     closeDialog 0;
   };
 
-  if(_pistola isEqualTo "Taser_26" or _pistola=="hgun_P07_F") exitWith {hint "No seas troll";};
+  if(_pistola isEqualTo "CSW_M26C" or _pistola=="hgun_P07_F") exitWith {hint "No seas troll";};
 
   if(_pistola != "") then {
 

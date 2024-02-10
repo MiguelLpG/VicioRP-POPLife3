@@ -18,8 +18,8 @@ If ( side player != west ) exitWith { hint "No estoy autorizado a suministrarte 
 _tiendaComun = [
 	["----- Equipamiento Básico -----", 0],
 	["pop_porra_h",50],
-	["Taser_26",50],
-	["26_cartridge",5],
+	["CSW_M26C",50],
+	["CSW_Taser_Probe_Mag",5],
 	["Binocular",50],
 	["pop_linterna",50],
 	["", 0],

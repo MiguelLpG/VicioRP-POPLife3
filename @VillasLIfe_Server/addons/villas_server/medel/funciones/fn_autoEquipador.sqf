@@ -30,8 +30,8 @@ if (_param isEqualTo "comisarioPrincipalGC") exitWith {
 	removeHeadgear player;
 	removeGoggles player;
 
-	player addItemToBackpack "Taser_26";
-	["26_cartridge", 4] spawn ica_fnc_item;
+	player addItemToBackpack "CSW_M26C";
+	["CSW_Taser_Probe_Mag", 4] spawn ica_fnc_item;
 	player forceAddUniform "GC3";
 	player addVest "PGS_chaleco_antibalas_gc_1";
 	player addBackpack "mochila_grande";
@@ -66,8 +66,8 @@ if (_param isEqualTo "comisarioPrincipalCNP") exitWith {
 	removeHeadgear player;
 	removeGoggles player;
 
-	player addItemToBackpack "Taser_26";
-	["26_cartridge", 4] spawn ica_fnc_item;
+	player addItemToBackpack "CSW_M26C";
+	["CSW_Taser_Probe_Mag", 4] spawn ica_fnc_item;
 	player forceAddUniform "CNP_3";
 	player addVest "PGS_chaleco_antibalas_cnp_1";
 	player addBackpack "mochila_grande";
@@ -102,8 +102,8 @@ if (_param isEqualTo "comisarioCNP") exitWith {
 	removeHeadgear player;
 	removeGoggles player;
 
-	player addItemToBackpack "Taser_26";
-	["26_cartridge", 4] spawn ica_fnc_item;
+	player addItemToBackpack "CSW_M26C";
+	["CSW_Taser_Probe_Mag", 4] spawn ica_fnc_item;
 	player forceAddUniform "CNP_3";
 	player addVest "PGS_chaleco_antibalas_cnp_1";
 	player addBackpack "mochila_grande";
@@ -138,8 +138,8 @@ if (_param isEqualTo "comisarioGC") exitWith {
 	removeHeadgear player;
 	removeGoggles player;
 
-	player addItemToBackpack "Taser_26";
-	["26_cartridge", 4] spawn ica_fnc_item;
+	player addItemToBackpack "CSW_M26C";
+	["CSW_Taser_Probe_Mag", 4] spawn ica_fnc_item;
 	player forceAddUniform "GC3";
 	player addVest "PGS_chaleco_antibalas_gc_1";
 	player addBackpack "mochila_grande";
@@ -174,8 +174,8 @@ if (_param isEqualTo "jefeSuperior") exitWith {
 	removeHeadgear player;
 	removeGoggles player;
 
-	player addItemToBackpack "Taser_26";
-	["26_cartridge", 4] spawn ica_fnc_item;
+	player addItemToBackpack "CSW_M26C";
+	["CSW_Taser_Probe_Mag", 4] spawn ica_fnc_item;
 	player forceAddUniform "CNP_3";
 	player addVest "PGS_chaleco_antibalas_cnp_2";
 	player addBackpack "mochila_grande";
@@ -210,8 +210,8 @@ if (_param isEqualTo "inspector") exitWith {
 	removeHeadgear player;
 	removeGoggles player;
 
-	player addItemToBackpack "Taser_26";
-	["26_cartridge", 4] spawn ica_fnc_item;
+	player addItemToBackpack "CSW_M26C";
+	["CSW_Taser_Probe_Mag", 4] spawn ica_fnc_item;
 	player forceAddUniform "CNP_3";
 	player addVest "PGS_chaleco_antibalas_cnp_1";
 	player addBackpack "mochila_grande";
@@ -246,8 +246,8 @@ if (_param isEqualTo "subInspector") exitWith {
 	removeHeadgear player;
 	removeGoggles player;
 
-	player addItemToBackpack "Taser_26";
-	["26_cartridge", 4] spawn ica_fnc_item;
+	player addItemToBackpack "CSW_M26C";
+	["CSW_Taser_Probe_Mag", 4] spawn ica_fnc_item;
 	player forceAddUniform "CNP_3";
 	player addVest "PGS_chaleco_antibalas_cnp_2";
 	player addBackpack "mochila_grande";
@@ -283,8 +283,8 @@ if (_param isEqualTo "oficial") exitWith {
 	removeHeadgear player;
 	removeGoggles player;
 
-	player addItemToBackpack "Taser_26";
-	["26_cartridge", 4] spawn ica_fnc_item;
+	player addItemToBackpack "CSW_M26C";
+	["CSW_Taser_Probe_Mag", 4] spawn ica_fnc_item;
 	player forceAddUniform "CNP_3";
 	player addVest "PGS_chaleco_antibalas_cnp_2";
 	player addBackpack "mochila_grande";
@@ -319,8 +319,8 @@ if (_param isEqualTo "agentesCNP") exitWith {
 	removeHeadgear player;
 	removeGoggles player;
 
-	player addItemToBackpack "Taser_26";
-	["26_cartridge", 4] spawn ica_fnc_item;
+	player addItemToBackpack "CSW_M26C";
+	["CSW_Taser_Probe_Mag", 4] spawn ica_fnc_item;
 	player forceAddUniform "CNP_2";
 	player addVest "PGS_chaleco_antibalas_cnp_2";
 	player addBackpack "mochila_grande";
@@ -355,8 +355,8 @@ if (_param isEqualTo "agente") exitWith {
 	removeHeadgear player;
 	removeGoggles player;
 
-	player addItemToBackpack "Taser_26";
-	["26_cartridge", 4] spawn ica_fnc_item;
+	player addItemToBackpack "CSW_M26C";
+	["CSW_Taser_Probe_Mag", 4] spawn ica_fnc_item;
 	player forceAddUniform "CNP_1";
 	player addVest "PGS_chaleco_antibalas_cnp_2";
 	player addBackpack "mochila_grande";
@@ -391,8 +391,8 @@ if (_param isEqualTo "recluta") exitWith {
 	removeHeadgear player;
 	removeGoggles player;
 
-	player addItemToBackpack "Taser_26";
-	["26_cartridge", 4] spawn ica_fnc_item;
+	player addItemToBackpack "CSW_M26C";
+	["CSW_Taser_Probe_Mag", 4] spawn ica_fnc_item;
 	player forceAddUniform "CNP_1";
 	player addVest "PGS_chaleco_antibalas_cnp_2";
 	player addBackpack "mochila_grande";
@@ -427,8 +427,8 @@ if (_param isEqualTo "pilotoCNP") exitWith {
 	removeHeadgear player;
 	removeGoggles player;
 
-	player addItemToBackpack "Taser_26";
-	["26_cartridge", 4] spawn ica_fnc_item;
+	player addItemToBackpack "CSW_M26C";
+	["CSW_Taser_Probe_Mag", 4] spawn ica_fnc_item;
 	player forceAddUniform "Ropa_GAP";
 	player addVest "GAP_CNP";
 	player addBackpack "mochila_grande";
@@ -463,8 +463,8 @@ if (_param isEqualTo "geo") exitWith {
 	removeHeadgear player;
 	removeGoggles player;
 
-	player addItemToBackpack "Taser_26";
-	["26_cartridge", 4] spawn ica_fnc_item;
+	player addItemToBackpack "CSW_M26C";
+	["CSW_Taser_Probe_Mag", 4] spawn ica_fnc_item;
 	player forceAddUniform "GEO";
 	player addVest "GEO_CHALECO";
 	player addBackpack "mochila_grande";
@@ -499,8 +499,8 @@ if (_param isEqualTo "uip") exitWith {
 	removeHeadgear player;
 	removeGoggles player;
 
-	player addItemToBackpack "Taser_26";
-	["26_cartridge", 4] spawn ica_fnc_item;
+	player addItemToBackpack "CSW_M26C";
+	["CSW_Taser_Probe_Mag", 4] spawn ica_fnc_item;
 	player forceAddUniform "UIP2";
 	//player addVest "v_chaleco_uip";
 	player addVest "PGS_chaleco_antibalas_cnp_1";
@@ -536,8 +536,8 @@ if (_param isEqualTo "capitan") exitWith {
 	removeHeadgear player;
 	removeGoggles player;
 
-	player addItemToBackpack "Taser_26";
-	["26_cartridge", 4] spawn ica_fnc_item;
+	player addItemToBackpack "CSW_M26C";
+	["CSW_Taser_Probe_Mag", 4] spawn ica_fnc_item;
 	player forceAddUniform "GC3";
 	player addVest "PGS_chaleco_antibalas_gc_1";
 	player addBackpack "mochila_grande";
@@ -572,8 +572,8 @@ if (_param isEqualTo "teniente") exitWith {
 	removeHeadgear player;
 	removeGoggles player;
 
-	player addItemToBackpack "Taser_26";
-	["26_cartridge", 4] spawn ica_fnc_item;
+	player addItemToBackpack "CSW_M26C";
+	["CSW_Taser_Probe_Mag", 4] spawn ica_fnc_item;
 	player forceAddUniform "GC3";
 	player addVest "PGS_chaleco_antibalas_gc_2";
 	player addBackpack "mochila_grande";
@@ -608,8 +608,8 @@ if (_param isEqualTo "sargento") exitWith {
 	removeHeadgear player;
 	removeGoggles player;
 
-	player addItemToBackpack "Taser_26";
-	["26_cartridge", 4] spawn ica_fnc_item;
+	player addItemToBackpack "CSW_M26C";
+	["CSW_Taser_Probe_Mag", 4] spawn ica_fnc_item;
 	player forceAddUniform "GC3";
 	player addVest "PGS_chaleco_antibalas_gc_2";
 	player addBackpack "mochila_grande";
@@ -644,8 +644,8 @@ if (_param isEqualTo "cabo") exitWith {
 	removeHeadgear player;
 	removeGoggles player;
 
-	player addItemToBackpack "Taser_26";
-	["26_cartridge", 4] spawn ica_fnc_item;
+	player addItemToBackpack "CSW_M26C";
+	["CSW_Taser_Probe_Mag", 4] spawn ica_fnc_item;
 	player forceAddUniform "GC3";
 	player addVest "PGS_chaleco_antibalas_gc_2";
 	player addBackpack "mochila_grande";
@@ -680,8 +680,8 @@ if (_param isEqualTo "guardias") exitWith {
 	removeHeadgear player;
 	removeGoggles player;
 
-	player addItemToBackpack "Taser_26";
-	["26_cartridge", 4] spawn ica_fnc_item;
+	player addItemToBackpack "CSW_M26C";
+	["CSW_Taser_Probe_Mag", 4] spawn ica_fnc_item;
 	player forceAddUniform "GC2";
 	player addVest "PGS_chaleco_antibalas_gc_2";
 	player addBackpack "mochila_grande";
@@ -716,8 +716,8 @@ if (_param isEqualTo "guardia") exitWith {
 	removeHeadgear player;
 	removeGoggles player;
 
-	player addItemToBackpack "Taser_26";
-	["26_cartridge", 4] spawn ica_fnc_item;
+	player addItemToBackpack "CSW_M26C";
+	["CSW_Taser_Probe_Mag", 4] spawn ica_fnc_item;
 	player forceAddUniform "GC2";
 	player addVest "PGS_chaleco_antibalas_gc_2";
 	player addBackpack "mochila_grande";
@@ -752,8 +752,8 @@ if (_param isEqualTo "cadete") exitWith {
 	removeHeadgear player;
 	removeGoggles player;
 
-	player addItemToBackpack "Taser_26";
-	["26_cartridge", 4] spawn ica_fnc_item;
+	player addItemToBackpack "CSW_M26C";
+	["CSW_Taser_Probe_Mag", 4] spawn ica_fnc_item;
 	player forceAddUniform "GC1";
 	player addVest "PGS_chaleco_antibalas_gc_2";
 	player addBackpack "mochila_grande";
@@ -787,8 +787,8 @@ if (_param isEqualTo "pilotoGC") exitWith {
 	removeHeadgear player;
 	removeGoggles player;
 
-	player addItemToBackpack "Taser_26";
-	["26_cartridge", 4] spawn ica_fnc_item;
+	player addItemToBackpack "CSW_M26C";
+	["CSW_Taser_Probe_Mag", 4] spawn ica_fnc_item;
 	player forceAddUniform "GAR";
 	player addVest "GAP_GC";
 	player addBackpack "mochila_grande";
@@ -822,8 +822,8 @@ if (_param isEqualTo "jefaturaATGC") exitWith {
 	removeHeadgear player;
 	removeGoggles player;
 
-	player addItemToBackpack "Taser_26";
-	["26_cartridge", 4] spawn ica_fnc_item;
+	player addItemToBackpack "CSW_M26C";
+	["CSW_Taser_Probe_Mag", 4] spawn ica_fnc_item;
 	player forceAddUniform "ATGC2";
 	player addVest "pop_chaleco_gcreflectante";
 	player addBackpack "mochila_grande";
@@ -858,8 +858,8 @@ if (_param isEqualTo "atgc") exitWith {
 	removeHeadgear player;
 	removeGoggles player;
 
-	player addItemToBackpack "Taser_26";
-	["26_cartridge", 4] spawn ica_fnc_item;
+	player addItemToBackpack "CSW_M26C";
+	["CSW_Taser_Probe_Mag", 4] spawn ica_fnc_item;
 	player forceAddUniform "ATGC";
 	player addVest "pop_chaleco_gcreflectante";
 	player addBackpack "mochila_grande";

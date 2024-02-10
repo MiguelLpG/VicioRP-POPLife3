@@ -167,7 +167,11 @@ _cosas = [
     "confirmacion", "informacion", "cierraTodo", "autoEquipador", "checkMap", "marcadores", "antiMacros", "nombreFake", "taller",
     /* funciones de Villas*/
     "eggplant", "national", "farmacia", "manolo", "casino", "tiendalujo", "ftravel", "robosMenoresHandler", "fumigador", "correos",
-    "axeMsg", "rosarioEnt", "axeTrans", "DaniVillasPlayerProfile", "PlayerProfileSystem", "antiDupeSystem", "entrarPoli",
+    "axeMsg", "rosarioEnt", "axeTrans", "DaniVillasPlayerProfile", "PlayerProfileSystem", "antiDupeSystem", "entrarPoli", "rosario",
+    "drogaMar", "breakingBad", "cocaine", "crank", "drugUsed", "heroin", "marijuana", "meth", "overdose", "pegarHumo", "usarDroga",
+
+	"SonidosPolicia","Limitador","SonidosNewSiren","SFX","vehiculoAsiento","vehiculoAsientoCargo","vehiculoChkClase","vehiculoIDentificar",
+    "vehiculoLimpiar","vehiculoValidar","SFXambientes","bkRemoteRequest",
     /* funciones de Icaruk */
 	"hab_golpe", "hab_molotov", "hab_pociondeinvis", "hab_pociondeparkour", "hab_pociondeadmin", "hab_reparar",
 	"EH", "usoitemfis", "pongoItem",
@@ -539,23 +543,37 @@ publicVariable "fnc_limpiador";
 ["generarRobosMenores"] spawn ica_fnc_robosMenoresHandler;
 ["init"] spawn ica_fnc_correos;
 ["init"] spawn ica_fnc_rosarioEnt;
+["init"] spawn ica_fnc_breakingBad;
+["init"] spawn ica_fnc_drogaMar;
+["init"] spawn ica_fnc_rosario;
 ["init"] spawn ica_fnc_axeTrans;
 // ------------------- FIN INICIALIZAR NPCs -----------------------------------------
 
 
 hw setVariable ["combustible",0.22,true];
 
-/* Cosas de Villas */
-adminprivi = ["76561199048328002"];
-hint "prueba";
-{
-	waituntil {!isnil "license_civ_donator"};
-
-	sleep 5;
-	Desc = 1;
-
-	if (getplayerUID player in adminprivi) exitwith {
-		player enableFatigue false;
+0 spawn {
+	while {true} do {
+			_players = (count allplayers)/80;
+			{
+				missionNamespace setVariable [_x, (missionNamespace getVariable _x) - round (72*_players)];
+				if ((missionNamespace getVariable _x) <= 0) then {missionNamespace setVariable [_x, 0]};
+			} forEach ["des1Ali", "des1Agu", "des1Com", "des1Mad",
+			"des2Ali", "des2Agu", "des2Com", "des2Mad",
+			"des3Ali", "des3Agu", "des3Com", "des3Mad",
+			"des4Ali", "des4Agu", "des4Com", "des4Mad"];
+			
+			{
+				missionNamespace setVariable [_x, (missionNamespace getVariable _x) - round (60*_players)];
+				if ((missionNamespace getVariable _x) <= 0) then {missionNamespace setVariable [_x, 0]};
+			} forEach ["minAre", "minCar", "minCob", "minHie", "minOro", "minPla"];
+			
+			{
+				missionNamespace setVariable [_x, (missionNamespace getVariable _x) - 1];
+				if ((missionNamespace getVariable _x) <= 0) then {missionNamespace setVariable [_x, 0]};
+			} forEach ["camMar", "camHer", "camCoc", "camMet"];		
+			
+			
+		sleep (60 * 30);
 	};
-
-} remoteexec ["bis_fnc_spawn", -2, true];
+};

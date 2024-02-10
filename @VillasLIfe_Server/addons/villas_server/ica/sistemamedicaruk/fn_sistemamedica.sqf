@@ -142,7 +142,7 @@ if ( _vaEnCoche AND !_voyEnCoche OR _proj=="coche" ) exitWith {
 
 
 //si te tasean
-if (((currentweapon _source) in ["Taser_26"]) AND !_voyEnCoche) exitWith {
+if (((currentweapon _source) in ["CSW_M26C"]) AND !_voyEnCoche) exitWith {
 
 	if (!(_victima getVariable ["restrained", false]) AND ((_victima distance _source) < 30)) then {
 		[_victima, _source] spawn life_fnc_tazed;

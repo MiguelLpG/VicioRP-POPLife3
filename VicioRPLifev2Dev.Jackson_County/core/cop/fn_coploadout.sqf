@@ -28,12 +28,12 @@ player assignItem "tf_anprc152";
 [(call TFAR_fnc_activeSwRadio), 8, "512"] call TFAR_fnc_SetChannelFrequency;*/
 
 player addBackpack "mochila_pequena";
-player addWeapon "Taser_26";
-player addMagazine "26_cartridge";
-player addMagazine "26_cartridge";
-player addMagazine "26_cartridge";
-player addMagazine "26_cartridge";
-player addMagazine "26_cartridge";
+player addWeapon "CSW_M26C";
+player addMagazine "CSW_Taser_Probe_Mag";
+player addMagazine "CSW_Taser_Probe_Mag";
+player addMagazine "CSW_Taser_Probe_Mag";
+player addMagazine "CSW_Taser_Probe_Mag";
+player addMagazine "CSW_Taser_Probe_Mag";
 
 
 /* ITEMS */

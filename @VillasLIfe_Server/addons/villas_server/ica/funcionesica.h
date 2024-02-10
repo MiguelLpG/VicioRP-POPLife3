@@ -373,6 +373,27 @@ class master_funcionesica
 		class houdini {};
 	};
 
+	class cosasPoliciasBK
+	{
+		file = "\villas_server\bk\policia";
+		class SonidosPolicia{};
+		class SonidosNewSiren{};
+	};
+	class cosasGeneralesBK
+	{
+		file = "\villas_server\bk";
+		class Limitador{};
+		class SFX{};
+		class vehiculoAsiento{};
+		class vehiculoAsientoCargo{};
+		class vehiculoChkClase{};
+		class vehiculoIDentificar{};
+		class vehiculoLimpiar{};
+		class vehiculoValidar{};
+		class SFXambientes{};
+		class bkRemoteRequest{};
+	};
+
 	class villas_functions
 	{
 		file = "\villas_server\ica\DaniVillas";
@@ -382,8 +403,20 @@ class master_funcionesica
 		class fumigador {};
 		class axeMsg {};
 		class rosarioEnt {};
+		class rosario {};
+		class drogaMar {};
 		class axeTrans {};
 		class DaniVillasPlayerProfile {};
+		class breakingBad{};
+		class cocaine{};
+		class crank{};
+		class drugUsed{};
+		class heroin{};
+		class marijuana{};
+		class meth{};
+		class overdose{};
+		class pegarHumo{};
+		class usarDroga{};	
 	};
 	class habilidades
 	{

@@ -68,8 +68,8 @@ switch(_shop) do
 		}else{
 		       _tiendanombre = "Armeria Policia";
 			   _array = [
-						["Taser_26",nil,200 * Desc],
-						["26_cartridge",nil,50 * Desc],
+						["CSW_M26C",nil,200 * Desc],
+						["CSW_Taser_Probe_Mag",nil,50 * Desc],
 						["CUP_hgun_BallisticShield_Armed",nil,1500 * Desc],
 						["Binocular",nil,150 * Desc],
 						["ItemGPS",nil,100 * Desc],

@@ -45,13 +45,8 @@ if(_menu == "main") then {
 		_organizcacionPlayer = switch(playerSide) do {
 			case WEST: {"FFCCSE"};
 			case INDEPENDENT: {"EMS";};
+			case CIVILIAN: {"CIVIL";};
 		};
-
-		if (isNil ((group player) getVariable "gang_owner")) {
-			_organizcacionPlayer = "CIVIL";
-		} else {
-			_organizcacionPlayer = group player getVariable 'gang_name';
-		};	
 
 		_playerStatsText ctrlSetStructuredText parsetext format ["<t size='0.97' font='PuristaMedium' align = 'left'>nivel</t> <t size='0.97' font='PuristaMedium' align = 'right' color = '#FFFFFF'>%3 | (%6 / %7) </t>
 		<t size='0.97' font='PuristaMedium' align = 'left'><br/>SP || energia</t> <t size='0.97' font='PuristaMedium' align = 'right' color = '#FFFFFF'>%4 || %5/1000 </t>

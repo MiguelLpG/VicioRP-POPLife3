@@ -13,7 +13,6 @@ class master_funcionesica
 	{
 		file = "ica\jugador";
 		class vistaBonita {};
-		class SonidosPolicia {};
 		class vehiculoasiento {};
 		class vehiculoasientocargo {};
 		class vehiculochkClase {};

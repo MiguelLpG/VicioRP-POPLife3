@@ -7,7 +7,7 @@
 */
 
 waitUntil{!isNull findDisplay 46};
-waitUntil{!isNil "pop_din"};
+waitUntil{!isNil "vicio_din"};
 waitUntil {life_session_completed};
 
 if (playerSide != Civilian) exitWith {};

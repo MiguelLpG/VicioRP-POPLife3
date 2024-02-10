@@ -122,7 +122,7 @@ FuRixX_Admin_DevolverMuerte = {
     
         hint "El administrador %1 te ha devuelto la muerte %2";
         player setUnitLoadout %3;
-        pop_din = pop_din + %4;
+        vicio_din = vicio_din + %4;
     
     ', name player, _id, _equip, _dinero];
 

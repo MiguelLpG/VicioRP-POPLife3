@@ -20,7 +20,7 @@ if(!isNull _source) then
 		_isVehicle = if (vehicle player != player) then {true} else {false};
 
 		/* TAZER */
-		if (_curWep in ["Taser_26"]) then {
+		if (_curWep in ["CSW_M26C"]) then {
 			_damage = false;
 			if (_unit distance _source < 30) then {
 				if (!life_istazed && !(_unit getVariable ["restrained", false]) && !_isVehicle) then {
