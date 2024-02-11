@@ -90,17 +90,6 @@ if (_param isEqualTo "pica") exitWith {
 	};
 	titleText ["¡Hecho!", "PLAIN", 0.1];
 
-	/*_min = "min" call ica_fnc_expToLevel;
-
-	_puedoPicar = switch (_mineral) do {
-		case "arena": {if (_min >= 1) then {true}};
-		case "carbon": {if (_min >= 2) then {true}};
-		case "cobre": {if (_min >= 3) then {true}};
-		case "hierro": {if (_min >= 4) then {true}};
-		case "oro": {if (_min >= 5) then {true}};
-		case "platino": {if (_min >= 6) then {true}};
-	};
-	if (isNil {_puedoPicar}) exitWith {hint "No tienes los conocimientos necesarios para hacer esto"};*/
 if ("min" call ica_fnc_expToLevel >= 2) exitwith {
 	_class = format ["pop_%1_r", _mineral];
 	[_class, 2 + floor random 3] call ica_fnc_item;

@@ -229,7 +229,7 @@ class RscPicture_1213: RscPicture
 {
 	idc = 1213;
 	default = "true";
-	text = "\VillasLifeCore\logoServidor.paa";
+	text = "\VillasLifeCore\logoServer.paa";
 	x = 0.472157 * safezoneW + safezoneX;
 	y = 0.4362 * safezoneH + safezoneY;
 	w = 0.0670312 * safezoneW;

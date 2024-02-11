@@ -28,7 +28,7 @@ if(  _hgWeapon =="RH_sbr9" or _hgWeapon =="R3F_HK416M" or _hgWeapon =="RH_M4sbr_
       
        titleText["Gracias por devolver el arma, buen servicio", "PLAIN"];
        sleep 2;
-       ["Dinero",format [
+       /* ["Dinero",format [
 	    "%1 - (%2) ha incautado %6 por %3€  - Dinero en banco : %4€ - Dinero en mano %5€ (Incautaciones)",
 	    profileName,
 	    (getPlayerUID player),
@@ -37,7 +37,10 @@ if(  _hgWeapon =="RH_sbr9" or _hgWeapon =="R3F_HK416M" or _hgWeapon =="RH_M4sbr_
 	    vicio_din,
 	    _hgWeapon
 	]
-	] remoteexeccall ["ica_fnc_customlog",2];
+	] remoteexeccall ["ica_fnc_customlog",2]; */
+
+    Villas_EnviarLogDinero = format [":dollar:  El usuario **%1** (%2) ha incuatado el arma `%3` por `%4` - Dinero en mano: %5 / Dinero en banco: %6 - `Vendedor de Armas`", profileName, (getPlayerUID player), _hgWeapon, _pago, vicio_din, vicio_atmdin];
+    publicVariableServer "Villas_EnviarLogDinero";
 
         };
 

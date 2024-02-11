@@ -167,11 +167,11 @@ _cosas = [
     "confirmacion", "informacion", "cierraTodo", "autoEquipador", "checkMap", "marcadores", "antiMacros", "nombreFake", "taller",
     /* funciones de Villas*/
     "eggplant", "national", "farmacia", "manolo", "casino", "tiendalujo", "ftravel", "robosMenoresHandler", "fumigador", "correos",
-    "axeMsg", "rosarioEnt", "axeTrans", "DaniVillasPlayerProfile", "PlayerProfileSystem", "antiDupeSystem", "entrarPoli", "rosario",
+    "axeMsg", "rosarioEnt", "axeTrans", "PlayerProfileSystem", "antiDupeSystem", "entrarPoli", "rosario",
     "drogaMar", "breakingBad", "cocaine", "crank", "drugUsed", "heroin", "marijuana", "meth", "overdose", "pegarHumo", "usarDroga",
 
 	"SonidosPolicia","Limitador","SonidosNewSiren","SFX","vehiculoAsiento","vehiculoAsientoCargo","vehiculoChkClase","vehiculoIDentificar",
-    "vehiculoLimpiar","vehiculoValidar","SFXambientes","bkRemoteRequest",
+    "vehiculoLimpiar","vehiculoValidar","SFXambientes","bkRemoteRequest", "peaje",
     /* funciones de Icaruk */
 	"hab_golpe", "hab_molotov", "hab_pociondeinvis", "hab_pociondeparkour", "hab_pociondeadmin", "hab_reparar",
 	"EH", "usoitemfis", "pongoItem",
@@ -180,7 +180,7 @@ _cosas = [
 	//FUNCIONES HEISENBERG
 	"menucrafteo","tanque",
 	//BZ
-	"zonamafia","correos","lvlalerta"
+	"zonamafia","correos","lvlalerta", "comprarChalecoBomba", "poptv", "meca", "dialogoPintar", "pintarVehiculo"
 ];
 
 for "_idx" from 0 to (count _cosas) -1 do {
@@ -547,6 +547,10 @@ publicVariable "fnc_limpiador";
 ["init"] spawn ica_fnc_drogaMar;
 ["init"] spawn ica_fnc_rosario;
 ["init"] spawn ica_fnc_axeTrans;
+["init"] spawn ica_fnc_meca;
+["init"] spawn ica_fnc_poptv;
+
+0 spawn ica_fnc_initNaufragios;
 // ------------------- FIN INICIALIZAR NPCs -----------------------------------------
 
 

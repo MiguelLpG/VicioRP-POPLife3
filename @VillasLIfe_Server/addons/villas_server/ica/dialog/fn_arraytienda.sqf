@@ -23,6 +23,8 @@ switch (_param) do {
 	case "Armeria": {	["RH_cz75","RH_16Rnd_9x19_cz", 0,"RH_gsh18","RH_18Rnd_9x19_gsh", 0,"RH_kimber_nw","RH_7Rnd_45cal_m1911", 0,"RH_mak","RH_8Rnd_9x18_Mak", 0,"RH_mk2","RH_10Rnd_22LR_mk2", 0,"RH_mp412","RH_6Rnd_357_Mag", 0,"hgun_Pistol_heavy_02_F","6Rnd_45ACP_Cylinder", 0,"RH_tt33","RH_8Rnd_762_tt33", 0,"RH_ttracker","RH_6Rnd_45ACP_Mag"] };
 	case "Armeria 2": { ["RH_cz75","RH_16Rnd_9x19_cz", 0,"RH_gsh18","RH_18Rnd_9x19_gsh", 0,"RH_kimber_nw","RH_7Rnd_45cal_m1911", 0,"RH_mak","RH_8Rnd_9x18_Mak", 0,"RH_mk2","RH_10Rnd_22LR_mk2", 0,"RH_mp412","RH_6Rnd_357_Mag", 0,"hgun_Pistol_heavy_02_F","6Rnd_45ACP_Cylinder", 0,"RH_tt33","RH_8Rnd_762_tt33", 0,"RH_ttracker","RH_6Rnd_45ACP_Mag"] };
 	case "Tienda de semillas": { ["pop_rabano_s","pop_bamboo_s","pop_algodon_s","pop_maiz_s","pop_cannabis_s","pop_trigo_s","pop_girasol_s"] };
+	case "Tienda de Mecanicos": { ["soplete","pop_granlingote","pop_oxigeno","pop_componentes","ItemGPS","pop_pintura"] };
+
 
 	// Venta
 	case "Planta de reciclaje": { ["pop_basura_item"] };

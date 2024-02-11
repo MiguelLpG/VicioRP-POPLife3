@@ -10,7 +10,6 @@
 
 */
 
-
 if (dialog) exitWith {};
 _menu = _this select 0;
 //---------------------------
@@ -43,7 +42,7 @@ if(_menu == "main") then {
 
 
 		_organizcacionPlayer = switch(playerSide) do {
-			case WEST: {"FFCCSE"};
+			case WEST: {"FFCCSE";};
 			case INDEPENDENT: {"EMS";};
 			case CIVILIAN: {"CIVIL";};
 		};

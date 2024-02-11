@@ -13,7 +13,7 @@ switch (playerSide) do
 		// Heli Fast Rope
 		life_actions = life_actions + [player addAction["Fast Rope",life_fnc_fastRope,"",99,false,false,"", ' (vehicle player) != player && !isNull (vehicle player) && (vehicle player) isKindOf "Air" && driver (vehicle player) != player && (getPos player) select 2 <= 50 && (getPos player) select 2 >= 15 && speed vehicle player < 10 && !(player getVariable["transporting",false]) ']];
 
-		life_actions = life_actions + [player addAction["<t color='#FF0000' size='3'>Inmolarse</t>", life_fnc_comprarchalecobomba,{}, 4, false, true, "", 'vest player isEqualTo "A3L_SuicideVest" OR vest player isEqualTo "pop_chaleco_terro1"']];
+		life_actions = life_actions + [player addAction["<t color='#FF0000' size='3'>Inmolarse</t>", ica_fnc_comprarChalecoBomba,{}, 4, false, true, "", 'vest player isEqualTo "A3L_SuicideVest" OR vest player isEqualTo "pop_chaleco_terro1"']];
 		
 		life_actions = life_actions + [player addAction["<t color='#FF0000' size='3'>Gritar Allahu Akbar!</t>", {[player, "bomba"] call CBA_fnc_globalSay3D;},{}, 4, false, true, "", 'vest player isEqualTo "A3L_SuicideVest" OR vest player isEqualTo "pop_chaleco_terro1"']];
 	};
