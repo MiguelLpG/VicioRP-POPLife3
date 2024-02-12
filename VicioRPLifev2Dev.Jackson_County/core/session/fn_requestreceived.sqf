@@ -32,14 +32,7 @@ _this select 1],
 ["Frontera",false,false] call BIS_fnc_endMission;
 };
 
-//Lets make sure some vars are not set before hand.. If they are get rid of them, hopefully the engine purges past variables but meh who cares.
-/*if(!isServer && (!isNil "life_adminlevel" OR !isNil "life_coplevel" OR !isNil "life_donator")) exitWith {
-	[[profileName,getPlayerUID player,"VariablesAlreadySet"],"SPY_fnc_cookieJar",false,false] call life_fnc_MP;
-	[[profileName,format["Variables set before client initialization...\nlife_adminlevel: %1\nlife_coplevel: %2\nlife_donator: %3",life_adminlevel,life_coplevel,life_donator]],"SPY_fnc_notifyAdmins",true,false] call life_fnc_MP;
-	sleep 0.9;
-	["SpyGlass",false,false] execVM "\a3\functions_f\Misc\fn_endMission.sqf";
-};
-*/
+
 //Parse basic player information.
 vicio_din = parseNumber (_this select 2);
 vicio_atmdin = parseNumber (_this select 3);
@@ -48,6 +41,7 @@ __CONST__(life_donator,parseNumber(_this select 5));
 
 //Loop through licenses
 if(count (_this select 6) > 0) then {
+	#define CONST(var1,var2) var1 = compile (if (var2 isEqualType "") then {var2} else {str(var2)})
 	{missionNamespace setVariable [(_x select 0),(_x select 1)];} foreach (_this select 6);
 };
 
@@ -70,8 +64,8 @@ if(count (_this select 6) > 0) then {
 };*/
 
 life_gear = _this select 8;
-//DaniVillas estuvo aqui  [true] call life_fnc_loadGear; 
-[] spawn ica_fnc_AntiDupeSystem;
+[true] call life_fnc_loadGear; 
+//[] spawn ica_fnc_AntiDupeSystem;
 
 
 if(count (_this select 9) > 0) then {
@@ -85,6 +79,9 @@ switch(playerSide) do {
 		__CONST__(life_coplevel, parseNumber(_this select 7));
 		__CONST__(life_medicLevel,0);
 		__CONST__(life_opLevel,0);
+		player setVariable ["copLevel",1,true];
+		[] spawn life_fnc_copMarkers;
+		player setVariable ["rank", (__GETC__(life_coplevel)), true];
 	};
 
 	case civilian: {
@@ -119,12 +116,13 @@ switch(playerSide) do {
 		__CONST__(life_medicLevel, parseNumber(_this select 7));
 		__CONST__(life_coplevel,0);
 		__CONST__(life_opLevel,0);
+		player setVariable ["copLevel",1,true];
 	};
 
 	case east: {
 		__CONST__(life_opLevel,parseNumber(_this select 7));
 		op_gear = _this select 8;
-		//DaniVillas estuvo aqui  [] spawn life_fnc_loadGearop;
+		[] spawn life_fnc_loadGearop;
 		__CONST__(life_copLevel,0);
 		__CONST__(life_medicLevel,0);
 	};

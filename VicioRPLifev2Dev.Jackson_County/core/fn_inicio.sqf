@@ -1,14 +1,14 @@
 #include <macro.h>
-
+if !(isNil "The_programmer_initialised") exitWith {};
 switch (playerSide) do {
 
     // Policias
     case west: {
 		if ((__GETC__(life_coplevel) == 0)) then {endMission "NotWhitelisted";};
 
-		[] spawn life_fnc_copMarkers;
 		player setVariable ["rank", (__GETC__(life_coplevel)), true];
 		player setVariable ["copLevel",1,true];
+		[] spawn life_fnc_copMarkers;
 		[] spawn ica_fnc_NPCNames;
 	};
 

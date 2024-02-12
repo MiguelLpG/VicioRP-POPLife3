@@ -4,10 +4,7 @@ Cámaras de seguridad por Icaruk
 	["menu"] call ica_fnc_camaras;
 */
 
-_param = param [0];
-
-// (findDisplay 46) displayAddEventHandler ["KeyDown", "hint format ['%1', _this select 1]; "];
-
+/* _param = param [0];
 
 if (!isNil {DDoS}) exitWith {hint "Server is under attack"};
 
@@ -71,13 +68,13 @@ if (_param isEqualTo "init") exitWith {
 	
 	//Land_HandyCam_F
 	camComisaria1 = "pop_camara" createVehicleLocal (getMarkerPos "");
-	camComisaria1 setPosATL [8739.68,7268.96,6.76597];
+	camComisaria1 setPosATL [8739.68,7268.96,6.76597]; //Bug
 	camComisaria1 setdir 206;
 	[camComisaria1, -17, 0] call BIS_fnc_setpitchbank;
 	camComisaria1 enableSimulation false;
 	
 	camComisaria2 = "pop_camara" createVehicleLocal (getMarkerPos "");
-	camComisaria2 setPosATL [8613.18,7192.9,6.9072];
+	camComisaria2 setPosATL [8613.18,7192.9,6.9072]; //Bug
 	camComisaria2 setdir 90;
 	[camComisaria2, -21, 0] call BIS_fnc_setpitchbank;
 	camComisaria2 enableSimulation false;
@@ -180,9 +177,6 @@ if (_param isEqualTo "init") exitWith {
 	camCorazol2 setPosATL [8552.69,6684.75,7.2583];
 	camCorazol2 setdir 173;
 	[camCorazol2, -18, 0] call BIS_fnc_setpitchbank;
-	
-	
-	systemChat "Cámaras cargadas";
 };
 
 if (_param isEqualTo "menu") exitWith {
@@ -219,3 +213,4 @@ if (_param isEqualTo "sel") exitWith {
 		closeDialog 0;
 	};
 };
+ */

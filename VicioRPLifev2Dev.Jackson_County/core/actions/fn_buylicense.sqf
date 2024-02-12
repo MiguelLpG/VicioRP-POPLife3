@@ -16,3 +16,4 @@ if(vicio_din < _price) exitWith {hint format[localize "STR_NOTF_NE_1",[_price] c
 vicio_din = vicio_din - _price;
 titleText[format[localize "STR_NOTF_B_1", _license select 1,[_price] call life_fnc_numberText],"PLAIN"];
 missionNamespace setVariable[(_license select 0),true];
+[] spawn The_programmer_Duty_fnc_initPlayerLicensesCheck;

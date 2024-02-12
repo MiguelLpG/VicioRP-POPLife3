@@ -438,7 +438,8 @@ case DIK_8: {
 			hierba = !hierba;
 		};
 		if(!_alt && !_ctrlKey && !dialog) then {
-			["menu"] spawn ica_fnc_menuY;
+			//["menu"] spawn ica_fnc_menuY;
+			[1] spawn the_programmer_iphone_xi_fnc_phone_init;
 		};
 	};
     //F Key
@@ -558,14 +559,6 @@ case DIK_8: {
 		[] spawn ica_fnc_informacion;
 		_handled = true;
 	};
-
-	// F6
-	case DIK_F7: {
-		if (__GETC__(life_adminlevel) > 0) then {
-			[] spawn life_fnc_adminmenu;
-		};
-	};
-
 	case DIK_F6: {
 		if (__GETC__(life_adminlevel) == 5) then {
 			if (vehicle player == player) exitWith {hint "No estas en ningún coche"}; 
