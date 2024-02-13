@@ -1,7 +1,3 @@
-
-
-
-
 A3L_Fnc_TraflightA = {
 
 	IF(isServer) THEN {

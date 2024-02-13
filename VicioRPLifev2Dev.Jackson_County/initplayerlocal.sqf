@@ -24,7 +24,6 @@ if((_this select 1)) then {
 
 [] spawn Climent_fnc_rangos;
 
-[] execVM "QS_icons.sqf";
 
 0 enableChannel false;
 1 enableChannel false;

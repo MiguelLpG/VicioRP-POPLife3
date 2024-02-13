@@ -345,11 +345,11 @@ if (_param isEqualTo "compro") exitWith {
 	} else {
 		[_cosa] call ica_fnc_item;
 	};
-	if (_cosa isEqualTo "A3L_SuicideVest") then {[] spawn life_fnc_comprarChalecoBomba;};
+	if (_cosa isEqualTo "A3L_SuicideVest") then {[] spawn ica_fnc_comprarChalecoBomba;};
 	hint format ["Has comprado %1 por %2€", _cosa, _precio];
 	[format ["- %1€", _precio]] call ica_fnc_infolog;
 	
-	["Dinero",format [
+/* 	["Dinero",format [
 	"%1 - (%2) ha comprado %6 por %3€  - Dinero en banco : %4€ - Dinero en mano %5€ (Tienda terro)",
 	 profileName,
 	(getPlayerUID player),
@@ -358,7 +358,10 @@ if (_param isEqualTo "compro") exitWith {
 	vicio_din,
 	_cosa
 	]
-	] remoteexeccall ["ica_fnc_customlog",2];
+	] remoteexeccall ["ica_fnc_customlog",2]; */
+
+	Villas_EnviarLogDinero = format [":dollar:  El usuario **%1** (%2) ha comprado `%3` por `%4` - Dinero en mano: %5 / Dinero en banco: %6 - `Tienda Terrorista`", profileName, (getPlayerUID player), _cosa, _precio, vicio_din, vicio_atmdin];
+    publicVariableServer "Villas_EnviarLogDinero";
 	
 };
 

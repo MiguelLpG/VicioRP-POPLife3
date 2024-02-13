@@ -47,16 +47,21 @@ class master_funcionesica
 		class sync {};
 		class misionesLaEmpresa {};
 	};
-
 	class admin
 	{
 		file = "\villas_server\ica\admin";
 		class consola {};
 	};
 
+
 	class DaniVillasPlayerProfileSystem {
 		file = "\villas_server\DaniVillas\PlayerProfileSystem";
 		class PlayerProfileSystem {};
+	}
+
+	class DaniVillasFactionsSystem {
+		file = "\villas_server\DaniVillas\FactionsSystem";
+		class peaje {};
 	}
 
 	class DaniVillasClient {
@@ -64,7 +69,13 @@ class master_funcionesica
 		class antiDupeSystem {};
 		class initFactions {};
 		class entrarPoli {};
+		class NPCNames {};
 	}
+	class DaniVillasMecanico {
+		file = "\villas_server\DaniVillas\meca";
+		class meca {};
+	}
+
 
 	class medelRobos
 	{
@@ -406,7 +417,6 @@ class master_funcionesica
 		class rosario {};
 		class drogaMar {};
 		class axeTrans {};
-		class DaniVillasPlayerProfile {};
 		class breakingBad{};
 		class cocaine{};
 		class crank{};
@@ -489,6 +499,7 @@ class master_funcionesica
 		class sillaelectrica {};
 		class bancoheist {};
 		class pescar {};
+		class comprarChalecoBomba {};
 	};
 
 	class rosenPolitica
@@ -501,6 +512,12 @@ class master_funcionesica
 		class initVotantes {};
 		class listaInscripcion {};
 		class resultados {};
+	};
+	class taller
+	{
+		file = "\villas_server\rosen\taller_pintura";
+		class dialogoPintar {};
+		class pintarVehiculo {};
 	};
 
 	class util

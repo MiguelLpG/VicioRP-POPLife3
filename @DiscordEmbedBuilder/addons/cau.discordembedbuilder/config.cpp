@@ -1,5 +1,5 @@
 // You don't need to worry about this stuff
-#include "\@DiscordEmbedBuilder\external\_config.cpp"
+#include "\@DiscordEmbedBuilder\configuracion.cpp"
 class CfgPatches {
 	class CAU_DiscordEmbedBuilder {
         name="DiscordEmbedBuilder";
@@ -21,6 +21,7 @@ class CfgFunctions {
 			class buildCfg {};
 			class buildSqf {};
 			class send {};
+			class log {preInit=1;};
 		};
 	};
 };

@@ -390,7 +390,7 @@ if (_param isEqualTo "compro") exitWith {
 	//hint format ["Has comprado %1 por %2€", _cosa, _precio];
 	hint parseText format["<t color='#ffffff' size='2'>PoP Life</t><br/><br/><img shadown='false' size='6' image=''/><br/><br/>Has comprado %1 por %2€", _cosa, _precio]; 
 	[format ["- %1€", _precio]] call ica_fnc_infolog;
-	if (_cosa isEqualTo "A3L_SuicideVest") then {[] spawn life_fnc_comprarChalecoBomba};
+	if (_cosa isEqualTo "A3L_SuicideVest") then {[] spawn ica_fnc_comprarChalecoBomba};
 	["Dinero",format [
 	"%1 - (%2) ha comprado %6 por %3€  - Dinero en banco : %4€ - Dinero en mano %5€ (Tienda mafia)",
 	 profileName,

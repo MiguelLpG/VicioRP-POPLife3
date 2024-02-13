@@ -4,20 +4,12 @@ switch (playerSide) do {
 
     // Policias
     case west: {
-		if ((__GETC__(life_coplevel) == 0) && (__GETC__(life_adminlevel) == 0)) then {
-			//["NotWhitelisted", false, true] call BIS_fnc_endMission;
-		endMission "NotWhitelisted";
-
-			sleep 35;
-		};
+		if ((__GETC__(life_coplevel) == 0)) then {endMission "NotWhitelisted";};
 
 		player setVariable ["rank", (__GETC__(life_coplevel)), true];
 		player setVariable ["copLevel",1,true];
-<<<<<<< HEAD
 		[] spawn life_fnc_copMarkers;
 		[] spawn ica_fnc_NPCNames;
-=======
->>>>>>> parent of ed2be50 (Añadido mecánico, fix mineria, sistema logs, etc)
 	};
 
 	// Civiles
@@ -31,27 +23,15 @@ switch (playerSide) do {
 		};
 		[] spawn life_fnc_civMarkers;
 		[] call life_fnc_zoneCreator;
+		[] spawn ica_fnc_NPCNames;
 		
 	};
 
 	// Médicos
 	case independent: {
-		if ((__GETC__(life_medicLevel)) < 1) exitWith {
-			//["Notwhitelisted", FALSE, TRUE] call BIS_fnc_endMission;
-			endMission "NotWhitelisted";
-
-			sleep 35;
-		};
+		if ((__GETC__(life_medicLevel)) == 0) exitWith {endMission "NotWhitelisted";};
 		player setVariable ["copLevel",1,true];
-	};
-
-	// Servicios pubicos
-	case opfor: {
-		if ((__GETC__(life_oplevel) == 0) && (__GETC__(life_adminlevel) == 0)) then {
-			//["NotWhitelisted", false, true] call BIS_fnc_endMission;
-			endMission "NotWhitelisted";
-			sleep 35;
-		};
+		[] spawn ica_fnc_NPCNames;
 	};
 };
 
