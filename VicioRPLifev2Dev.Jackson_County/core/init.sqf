@@ -97,10 +97,11 @@ player setVariable["lockpicking",false,true];
 //activar medical advaned system
 
 diag_log "Past Settings Init";
-
+[] execFSM "core\fsm\client.fsm";
+diag_log "Executing client.fsm";
 waitUntil {!(isNull (findDisplay 46))};
 diag_log "Display 46 Found";
-if (isNil "The_programmer_initialised") then { (findDisplay 46) displayAddEventHandler ["KeyDown", "_this call life_fnc_keyHandler"];};
+(findDisplay 46) displayAddEventHandler ["KeyDown", "_this call life_fnc_keyHandler"];
 player addRating 99999999;
 diag_log "------------------------------------------------------------------------------------------------------";
 diag_log format["                End of Altis Life Client Init :: Total Execution Time %1 seconds ",(diag_tickTime) - _timeStamp];
@@ -197,16 +198,10 @@ player allowDamage true;
 
 call compile preprocessFileLineNumbers "core\functions\fn_announce.sqf";
 
-life_paycheck = compile (if (life_paycheck isEqualType "") then {life_paycheck} else {str(life_paycheck)});
+__CONST__(life_paycheck,life_paycheck);
 
 [] spawn life_fnc_asyncInit;
-[] spawn theprogrammer_core_fnc_clientInit;
-[] spawn The_programmer_Duty_fnc_init_Service;
 
 //(findDisplay 46) displayAddEventHandler ["MouseButtonDown", "0 spawn ica_fnc_talando;"];
 
-/* ASIGNAR LICENCIAS EN BASE A LA WHITELIST POR VILLAS */
 if (call life_donator > 0) then {license_civ_donator = true;} else {license_civ_donator = false;};
-if (call life_coplevel > 0) then {license_civ_isCop = true;} else {license_civ_isCop = false;};
-if (call life_mediclevel > 0) then {license_civ_isMed = true;} else {license_civ_isMed = false;};
-// como odio arma3...

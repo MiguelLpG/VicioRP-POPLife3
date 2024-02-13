@@ -10,8 +10,8 @@ reporteUsado = true;
 _din = round (vicio_atmdin * 0.25);
 vicio_atmdin = vicio_atmdin - _din;
 
-_dinmano = round (vicio_din * 0.25);
-vicio_din = vicio_din - _dinmano;
+_dinmano = round (life_cash * 0.25);
+life_cash = life_cash - _dinmano;
 
 [0] call SOCK_fnc_updatePartial;
 [format ["REPORTE ----- %1 (%2) ha usado la función reporte (- %3€)", name player, getPlayerUID player, _din], "diag_log", false, false, false] call BIS_fnc_MP;

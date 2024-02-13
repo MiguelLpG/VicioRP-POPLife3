@@ -111,7 +111,7 @@ StIrGoY__aNtI__hAcK__LoAd__AnTi__MaNcOs__AnTiVaV2=
 StIrGoY__aNtI__hAcK__LoAd__AnTi__MaNcOs__BaNmOnEyVaRs=
 	{
 		private["_STrAC_dinlist"];
-		_STrAC_dinlist = ["experiencia","vicio_din","vicio_atmdin","vicio_din","vicio_atmdin","life_bank","executeEverything_lastCodes","executeEverything_lastCodes_index","GFPPE_updateParEB","Lx_fnc_supprObject"];
+		_STrAC_dinlist = ["experiencia","vicio_din","vicio_atmdin","vicio_din","life_atmcash","life_bank","executeEverything_lastCodes","executeEverything_lastCodes_index","GFPPE_updateParEB","Lx_fnc_supprObject"];
 		while{true}do{
 			private "_STrAC_mon";
 			{

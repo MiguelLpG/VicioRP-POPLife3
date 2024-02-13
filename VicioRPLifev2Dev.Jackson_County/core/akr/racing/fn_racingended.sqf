@@ -117,6 +117,7 @@ _this spawn {
 				[_coche, [0, 0, 1]] call ica_fnc_setVelocityRas;
 				deletevehicle _coche;
 
+				player setPos _posicion;
 				player allowDamage true;
 			} else {
 				hint parseText "<t color='#F00'>No has pasado la prueba</t>";
@@ -126,6 +127,7 @@ _this spawn {
 				[_coche, [0, 0, 1]] call ica_fnc_setVelocityRas;
 				deletevehicle _coche;
 
+				player setPos _posicion;
 				player allowDamage true;
 			};
 		};

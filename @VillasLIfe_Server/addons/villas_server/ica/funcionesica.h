@@ -338,8 +338,8 @@ class master_funcionesica
 	{
 		file = "\villas_server\ica\policia";
 		class sacoDineroPublico {};
-		//class camaras {}; está bug
-		class puntosCarnet {}; 
+		class camaras {};
+		class puntosCarnet {};
 		class tiendaPolicia {};
 		class tiendaMilitar {};
 		class matriculas3D {};

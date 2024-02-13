@@ -1,8 +1,6 @@
-#define F(NAME,TARGET) class NAME { \
+		#define F(NAME,TARGET) class NAME { \
     allowedTargets = TARGET; \
 };
-
-#include "The-Programmer\theprogrammer_remoteExec_master.cpp"
 
 #define ANYONE 0
 #define CLIENT 1
@@ -4956,7 +4954,6 @@ class CfgRemoteExec {
         F(addMagazine,ANYONE)
         F(addPrimaryWeaponItem,ANYONE)
         F(addWeapon,ANYONE)
-		F(hideObjectGlobal,ANYONE)
         F(setFuel,ANYONE)
 		F(spawn,CLIENT)
     };

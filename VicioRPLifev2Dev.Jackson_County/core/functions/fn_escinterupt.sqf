@@ -62,7 +62,7 @@ while {true} do
 	_usebleCtrl = call _canUseControls;
 	_usebleCtrl spawn _escSync;
 	if(_usebleCtrl) then {
-		_respawnButton ctrlEnable false; //Enable the button.
+		_respawnButton ctrlEnable true; //Enable the button.
 	};
 	waitUntil{isNull (findDisplay 49)};
 	closeDialog 0;

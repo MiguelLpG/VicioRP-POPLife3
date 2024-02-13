@@ -14,7 +14,7 @@ while {true} do {
 	_dolor = ((_victima getVariable "cabeza") + (_victima getVariable "pecho") + (_victima getVariable "brazos") + (_victima getVariable "piernas")) / 4;
 
 	if (!isNil {_dolor}) then {
-		if (_dolor < 20) exitWith {_victima setVariable ["dolor", false]; _fuera = true;};
+		if (_dolor < 20) exitWith {_victima setVariable ["dolor", false]; hint "No me duele nada"; _fuera = true;};
 
 		private "_borrosidad";
 		_borrosidad = switch (true) do {

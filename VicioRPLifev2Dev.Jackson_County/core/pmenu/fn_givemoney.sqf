@@ -26,6 +26,6 @@ hint format["Diste $%1$",[(parseNumber(_amount))] call life_fnc_numberText,_unit
 vicio_din = vicio_din - (parseNumber(_amount));
 [0] call SOCK_fnc_updatePartial;
 [_unit,_amount,player] remoteexeccall ["life_fnc_receiveMoney",_unit];
-[] call the_programmer_iphone_xi_fnc_apps_inventory;
+[] call life_fnc_p_updateMenu;
 
 ctrlShow[2001,true];

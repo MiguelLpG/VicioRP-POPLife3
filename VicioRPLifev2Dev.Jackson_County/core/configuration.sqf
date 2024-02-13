@@ -188,10 +188,7 @@ life_licenses =
 	["license_civ_Periodista","civ"],
 	["license_civ_transporte","civ"],
 	["license_civ_donator","civ"],
-	["license_civ_alcalde","civ"],
-	/* SISTEMA DE FACCIONES DE VILLAS */
-	["license_civ_isCop","civ"],
-	["license_civ_isMed","civ"]
+	["license_civ_alcalde","civ"]
 ];
 
 //Setup License Variables

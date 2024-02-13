@@ -138,7 +138,7 @@ _cosas = [
 	"pesca", "picando", "llenabotella", "talando", "initnaufragios", "agricultura", "initmineria", "procesado", "basura","obras",
 	"hacker", "ganzua", "initportatil", "mirodocumentos", "resetdatos", "roboconcesionario", "robodedatos", "roboalcalde", "robojoyeria","fugacarcel",
 	"tiendamafia","tiendaterrorista", "traficantedroga", "camello", "initdroga", "blanqueo",
-	"sacodineropublico", "puntoscarnet", "tiendaPolicia", "matriculas3D", "cacheo",
+	"sacodineropublico", "camaras", "puntoscarnet", "tiendaPolicia", "matriculas3D", "cacheo",
 	"initvars", "menutransportes", "menumineria", "carga", "descarga", "gasolinera", "menualmacen", "entregaPaquete",
 	"wikipedia", "impuestos", "nigromante", "consumo", "comobebo", "inithabilidades", "crafteo", "dadinero", "dallaves", "mensajesica", "posicion", "autobusMagico", "reporte", "houdini", /*"vistabonita",*/
 	"loteria", "consola", "rendimiento", "eligeDato", "meteDato",

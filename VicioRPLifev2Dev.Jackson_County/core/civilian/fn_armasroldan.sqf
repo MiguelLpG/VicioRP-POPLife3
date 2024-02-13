@@ -9,7 +9,7 @@ _unit = [_this,1,Objnull,[Objnull]] call BIS_fnc_param;
 if(isNull _unit) exitWith {}; //if not the thief get bent
 
 //puede pagar?¿
- if(vicio_atmdin - _precio < 100000) exitWith { hint "No tienes suficiente dinero";[] spawn { sleep 5;hint "";} };
+ if(life_atmcash - _precio < 100000) exitWith { hint "No tienes suficiente dinero";[] spawn { sleep 5;hint "";} };
 
 
  /*//nivel de poli
@@ -18,7 +18,7 @@ if(isNull _unit) exitWith {}; //if not the thief get bent
 */
 
 //equipar clase admin
-vicio_atmdin = vicio_atmdin-_precio;
+life_atmcash = life_atmcash-_precio;
 
 //_unit  addVest "GEO_CHALECO";
 //_unit  forceAddUniform "A3L_SECRET";

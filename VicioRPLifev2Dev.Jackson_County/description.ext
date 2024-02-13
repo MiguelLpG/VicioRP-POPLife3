@@ -7,7 +7,6 @@ joinUnassigned = 1;
 respawn = BASE;
 respawndelay = 5;
 disabledAI = 1;
-skipLobby = 1;
 disableChannels[] = {
 	{0, true, true}, //--- Chat Global
 	{1, true, true}, //--- Side Chat Policia
@@ -27,7 +26,7 @@ respawnButton = 0;
 
 class CfgServer {
     DatabaseName = "vlslife";
-    DebugMode = 0; //Consola de depuracion / 0 = Desactivado | 1 = Activado
+    DebugMode = 1; //Consola de depuracion / 0 = Desactivado | 1 = Activado
     HeadlessSupport = 1; //HeadslessSupport / 0 = Desactivado | 1 = Activado
 };
 
@@ -49,7 +48,6 @@ class Header
 #include "Climent\dialogs\conde.hpp"
 #include "Climent\dialogs\camiones.hpp"
 #include "CodePlus\cplus_masterConfig.cpp"
-#include "The-Programmer\theprogrammer_dialog_master.cpp"
 
 class RscTitles
 {
@@ -69,12 +67,6 @@ class RscTitles
 	#include "dialog\logo.hpp"
 	#include "dialog\sangrado.hpp"
 	#include "CodePlus\cplus_masterTitles.cpp"
-};
-
-class CfgSounds
-{
-	#include "The-Programmer\Iphone_XI\Sounds.hpp"
-	sounds[] = {};		
 };
 
 class CfgFunctions
@@ -146,8 +138,8 @@ class CfgDebriefing
 
 };
 
-class CfgNotifications{
-	#include "The-Programmer\Duty_System\notifications.cpp"
+class CfgNotifications
+{
 	class MedicalRequestEmerg
 	{
 		title = "EMS Requested";

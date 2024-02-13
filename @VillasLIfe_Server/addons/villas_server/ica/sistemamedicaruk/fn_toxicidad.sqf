@@ -16,7 +16,7 @@ sleep 1;
 while {true} do {
 	hint "Toxicidad";
 	_tox = _victima getVariable "toxicidad";
-	if (_tox <= 0) exitWith {intox = nil}; // ya no estoy en loop
+	if (_tox <= 0) exitWith {hint "No me duele nada"; intox = nil}; // ya no estoy en loop
 	if (_tox >= 100) exitWith {_victima setDamage 1; _victima setVariable ["toxicidad", 0, true]; intox = nil};
 	
 	_n = if (_tox < 10) then {_tox} else {10};
