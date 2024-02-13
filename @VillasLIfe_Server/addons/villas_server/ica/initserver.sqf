@@ -19,8 +19,6 @@ por: Icaruk & Medel
 0 spawn ica_fnc_initDroga;
 ["init"] spawn ica_fnc_roboJoyeria;
 ["init"] spawn ica_fnc_basura;
-["init"] spawn ica_fnc_meca;
-
 
 _listaRobos = [];
 missionNamespace setVariable ["ActualRobos",0,true];

@@ -1,7 +1,17 @@
+/* 
+	File: config.cpp
+	Author: CodePlus
+	You can purchase this script on www.bytex.market
+	YOU DONT HAVE ANY PERMISSION TO USE THIS SCRIPT, WITHOUT A PERMISSION FROM THE AUTHOR!	
+*/
+
 class cplus_notification
 {
-	allowSpam = "true";
-	spamCooldown = 5;
+	//GENERAL CONFIGURATION
+	allowSpam = "true"; //Allow the spam of same messages. Insert "true" for allow the spam, "false" for no spam.
+	spamCooldown = 5; //The number of seconds, the same message will be displayed. Only used when allowSpam is false.
+	
+	///////////////////////
     class info
     {
         type = "Information";

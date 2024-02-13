@@ -22,7 +22,7 @@ class Logo
  			font = "TahomaB";
  			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
  			lineSpacing = 0;
- 			text = "\VillasLifeCore\logoServer.paa";
+ 			text = "\VillasLifeCore\logoServidor.paa";
  			fixedWidth = 0;
  			shadow = 0;
 		};

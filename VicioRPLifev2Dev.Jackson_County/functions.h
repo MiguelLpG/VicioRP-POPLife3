@@ -1,10 +1,17 @@
 class Life_Client_Climent
 {
 	tag = "Climent";
-    class Master_Directory{file = "Climent";};
+
+    class Master_Directory
+	{
+		file = "Climent";
+		
+	};
+    
     class funciones
     {
         file = "Climent\funciones";
+        
         class ClimentAirdrop {};
 		class cnfryg {};
 		class reiniciador {};
@@ -17,12 +24,25 @@ class Life_Client_Climent
 		class tiendaRebelde {};
 		class voltearvehiculo {};
 		class paguita {};
+		//class seednifalso {};
+		//class dnifalso {};
 		class camiones {};
 		class conejo {}; // Abrir puertas (EVENTOS)
 		class rangos {};
-		class reiniciarpd {};    
+		class reiniciarpd {};
+		//class entornos {};
+		//class voltear {};
+        //class Maxi {};
+    
     };
+
+
+
+
 };
+
+
+
 
 class Socket_Reciever
 {
@@ -299,6 +319,13 @@ class Life_Client_Core
 		class copEnter {};
 		class confiscardinero {};
 	};
+	
+		class ChalecoBomba
+	{
+		file = "quickskill\terroristas";
+		class comprarChalecoBomba {};
+	};
+
 
 	class op
 	{
@@ -383,6 +410,8 @@ class Life_Client_Core
 
 	class Tonterias {
 		file = "rosen\tonterias";
+		class sentarse {};
+		class levantarse {};
 		class borracho {};
 	};
 };

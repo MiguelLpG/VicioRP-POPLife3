@@ -262,9 +262,8 @@ if (_param isEqualTo "compro") exitWith {
 	//hint format ["Has comprado %1 por %2€", _cosa, _precio];
 	hint parseText format["<t color='#ffffff' size='2'>PoP Life</t><br/><br/><img shadown='false' size='6' image=''/><br/><br/>Has comprado %1 por %2€", _cosa, _precio]; 
 	[format ["- %1€", _precio]] call ica_fnc_infolog;
-	if (_cosa isEqualTo "A3L_SuicideVest") then {[] spawn ica_fnc_comprarChalecoBomba};
-
-	/* ["Dinero",format [
+	if (_cosa isEqualTo "A3L_SuicideVest") then {[] spawn life_fnc_comprarChalecoBomba};
+	["Dinero",format [
 	"%1 - (%2) ha comprado %6 por %3€  - Dinero en banco : %4€ - Dinero en mano %5€ (Tienda mafia)",
 	 profileName,
 	(getPlayerUID player),
@@ -273,11 +272,8 @@ if (_param isEqualTo "compro") exitWith {
 	vicio_din,
 	_cosa
 	]
-	] remoteexeccall ["ica_fnc_customlog",2]; */
-
-	/* SISTEMA DE LOGS DE VILLAS */
-	Villas_EnviarLogDinero = format [":dollar:  El usuario **%1** (%2) ha comprado `%3` por `%4` - Dinero en mano: %5 / Dinero en banco: %6 - `Tienda Rebelde`", profileName, (getPlayerUID player), _cosa, _precio, vicio_din, vicio_atmdin];
-    publicVariableServer "Villas_EnviarLogDinero";
+	] remoteexeccall ["ica_fnc_customlog",2];
+	
 	
 };
 

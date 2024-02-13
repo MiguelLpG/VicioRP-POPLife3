@@ -43,7 +43,7 @@ if ((profileNamespace getVariable "rutome") > 0) then {
 				0 spawn life_fnc_inicio;
 			};
 
-			titleText [format ["Estás muerto, podrás reaparecer en %1 segundos...", _tiempoMuerto], "PLAIN"];
+			titleText [format ["Estás Muerto. Espera %1s", _tiempoMuerto], "PLAIN"];
 			profileNamespace setVariable ["rutome", (profileNamespace getVariable "rutome") - 1];
 		};
 	};

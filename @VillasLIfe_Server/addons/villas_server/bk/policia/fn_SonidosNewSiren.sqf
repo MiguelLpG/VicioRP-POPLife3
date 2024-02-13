@@ -57,7 +57,6 @@ If ( _CallParam == "fin" ) exitWith {
 			{ deleteVehicle _x; } forEach attachedObjects _MyVehicule; 
 			//If ( !isNil "BkPoliSirenaCar" ) Then { { deleteVehicle _x; } forEach attachedObjects BkPoliSirenaCar; };
 			BkPoliSirenaCar setVariable["SirenaData",false,true];
-			_MyVehicule setVariable["sirenPeaje",nil,true];
 			_Return = true;
 		};
 	};
@@ -131,7 +130,6 @@ if ( vehicle player != player ) then {
 			_BkNewSiren synchronizeObjectsAdd [SirenaControl];
 			_BkNewSiren attachTo [_MyVehicule, [0, 0, 1] ]; 
 			BkPoliSirenaCar setVariable["SirenaData",true,true];
-			_MyVehicule setVariable["sirenPeaje",true,true];
 		};
 	};
 };

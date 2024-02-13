@@ -2,7 +2,7 @@
 author = "Villas, VicioRP";
 onLoadName = "VicioRP || POP 3";
 onLoadMission = "VicioRP || POP 3";
-loadScreen = "\VillasLifeCore\logoServer.paa";
+loadScreen = "\VillasLifeCore\logoServidor.paa";
 joinUnassigned = 1;
 respawn = BASE;
 respawndelay = 5;
@@ -27,8 +27,13 @@ respawnButton = 0;
 
 class CfgServer {
     DatabaseName = "vlslife";
+<<<<<<< HEAD
     DebugMode = 0; //Consola de depuracion / 0 = Desactivado | 1 = Activado
     HeadlessSupport = 1; //HeadslessSupport / 0 = Desactivado | 1 = Activado
+=======
+    DebugMode = 1; //Consola de depuracion / 0 = Desactivado | 1 = Activado
+    HeadlessSupport = 0; //HeadslessSupport / 0 = Desactivado | 1 = Activado
+>>>>>>> parent of ed2be50 (Añadido mecánico, fix mineria, sistema logs, etc)
 };
 
 class Header
@@ -41,6 +46,7 @@ class Header
 #include "BK_FrameWork\BlackFeameWorkDIalogs\_BK_Dlg_All_IncludesDef.h"
 #include "dialog\MasterHandler.h"
 #include "BK_FrameWork\BlackFeameWorkDIalogs\_BK_Dlg_All_Includes.h"
+#include "infiSTAR_AdminMenu.hpp"
 #include "VVS\menu.h"
 #include "dialog\FastTravelDialog.hpp" //Villas
 #include "Climent\dialogs\Incaut.hpp"
@@ -66,7 +72,7 @@ class RscTitles
 	#include "dialog\anuncio.hpp"
 
 	#include "dialog\HUDica.hpp"
-	#include "dialog\logo.hpp"
+	//#include "dialog\logo.hpp"
 	#include "dialog\sangrado.hpp"
 	#include "CodePlus\cplus_masterTitles.cpp"
 };

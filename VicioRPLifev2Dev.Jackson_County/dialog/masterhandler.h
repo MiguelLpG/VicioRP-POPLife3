@@ -20,6 +20,7 @@
 #include "federalReserve.h"
 #include "tablet.hpp"
 #include "arrestmenu.hpp"
+#include "veh_repaint.hpp"
 #include "channel.hpp"
 #include "compensate.hpp"
 #include "craft.hpp"
@@ -28,7 +29,6 @@
 #include "tiendaPoli.hpp"
 #include "axeTrans.hpp"
 #include "DaniVillasPlayerProfile.hpp"
-#include "taller.hpp"
 
 // Medel
 #include "IncautarDinero.hpp"
@@ -44,7 +44,6 @@
 #include "informacion.hpp"
 #include "autoEquipador.hpp"
 #include "desguace.hpp"
-#include "tallerRosen.hpp"
 
 // Icaruk viejo
 #include "menuElectricidad.hpp"
@@ -60,6 +59,7 @@
 
 // cosasrandom
 #include "menubaile.hpp"
+#include "menutrol.hpp"
 #include "wikipedia.hpp"
 
 // robos y mafia

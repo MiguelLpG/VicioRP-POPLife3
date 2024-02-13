@@ -214,6 +214,7 @@ switch(_shop) do
 					]
 			];
 	};
+
 	case "genstore":
 	{
 				["Altis General Store",

@@ -442,6 +442,13 @@ case DIK_8: {
 			[1] spawn the_programmer_iphone_xi_fnc_phone_init;
 		};
 	};
+	//Shift+P = Menu Trol
+	case DIK_P: {
+		if(_shift) then {
+			createdialog "Menutrol_dialog";
+			_handled = true;
+		};
+	};
     //F Key
     case 33: {
 		[] spawn life_fnc_radar;
@@ -487,7 +494,7 @@ case DIK_8: {
 			if(!cinturon) then {
 				cinturon = true;
 				hintSilent "Cinturon abrochado";
-				player say3D "cinturon";
+				player say3D "cierracoche";
 				0 spawn {
 				waitUntil { sleep 1; vehicle player == player;};
 				cinturon = false;
@@ -496,7 +503,7 @@ case DIK_8: {
 			else {
 				cinturon = false;
 				hintSilent "Cinturon desabrochado";
-				player say3D "cinturon";
+				player say3D "cierracoche";
 			};
 		};
 	};

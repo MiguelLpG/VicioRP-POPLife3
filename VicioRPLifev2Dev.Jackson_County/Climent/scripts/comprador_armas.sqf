@@ -21,7 +21,7 @@ if(  _hgWeapon =="cl3_crossbow" or _hgWeapon =="SMG_01_F" or _hgWeapon =="RH_M16
       
        titleText["Gracias por vender el arma", "PLAIN"];
        sleep 2;
-       /* ["Dinero",format [
+       ["Dinero",format [
 	    "%1 - (%2) ha vendido el arma %6 por %3€  - Dinero en banco : %4€ - Dinero en mano %5€ (Venta de armas)",
 	    profileName,
 	    (getPlayerUID player),
@@ -30,9 +30,6 @@ if(  _hgWeapon =="cl3_crossbow" or _hgWeapon =="SMG_01_F" or _hgWeapon =="RH_M16
 	    vicio_din,
 	    _hgWeapon
 	]
-	] remoteexeccall ["ica_fnc_customlog",2]; */
+	] remoteexeccall ["ica_fnc_customlog",2];
 
-	Villas_EnviarLogDinero = format [":dollar:  El usuario **%1** (%2) ha vendido el arma `%3` por `%4` - Dinero en mano: %5 / Dinero en banco: %6 - `Vendedor de Armas`", profileName, (getPlayerUID player), _hgWeapon, _precio, vicio_din, vicio_atmdin];
-    publicVariableServer "Villas_EnviarLogDinero";
-
-};
+        };

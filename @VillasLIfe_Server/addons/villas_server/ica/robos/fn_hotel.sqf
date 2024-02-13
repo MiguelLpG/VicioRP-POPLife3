@@ -138,15 +138,12 @@ if!(alive _ladron) exitWith {};
 sleep 30 * 60;
 _shop setVariable ["Robo",false,true];
 
-/* ["Dinero",format [
+["Dinero",format [
 	    "%1 - ha robado %2 (ROBOS)",
 	    profileName,
 	    _shop
 	]
-	] remoteexeccall ["ica_fnc_customlog",2]; */
-
-Villas_EnviarLogAlert = format [":bomb: El usuario **%1** (%2) ha robado %3", profileName, (getPlayerUID player), _shop];
-publicVariableServer "Villas_EnviarLogAlert";
+	] remoteexeccall ["ica_fnc_customlog",2];
 
 
 

@@ -122,16 +122,13 @@ then
                  // 6000 cutText [_textString,"PLAIN DOWN",0];
          };
          
-        /*  ["Dinero",format [
+         ["Dinero",format [
 	    "%1 - (%2) ha empujado un coche en %3",
 	    profileName,
 	    (getPlayerUID player),
 	    mapGridPosition player
 	]
-	] remoteexeccall ["ica_fnc_customlog",2]; */
-
-        Villas_EnviarLogAlert = format [":warning:  El usuario **%1** (%2) ha empujado un coche en %3 (*%4*)", profileName, (getPlayerUID player), (mapGridPosition player), (getPos player)];
-        publicVariableServer "Villas_EnviarLogAlert";
+	] remoteexeccall ["ica_fnc_customlog",2];
          
          // *****************************RELATIVE MODEL POSITION CODE END************************************
 

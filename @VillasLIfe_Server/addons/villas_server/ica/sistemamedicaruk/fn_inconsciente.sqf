@@ -44,6 +44,7 @@ waituntil {((animationState _victima isEqualto "unconsciousrevivedefault") || (a
 _victima setUnconscious true;
 player setVariable ["tf_unable_to_use_radio", true]; //No puede usar radio
 player setVariable ["tf_globalVolume", 0, true]; //No escucha nada
+//0 call TFAR_fnc_setVoiceVolume;
 
 //quitamos que pueda hacer animaciones¿?
 //_victima disableAI "ANIM";
@@ -100,6 +101,7 @@ player disableConversation false;
 hint "Ya no estás inconsciente, visita un médico";
 //player setVariable ["tf_unable_to_use_radio", false]; //Puede usar radio
 //player setVariable ["tf_globalVolume", 1, true]; //Escucha todo
+//20 call TFAR_fnc_setVoiceVolume; //Puede hablar
 
 //sordera quitar
 3 fadeSound 1;

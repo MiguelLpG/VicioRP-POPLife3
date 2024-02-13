@@ -59,6 +59,7 @@ if (_modo) then { // compra
 		case "pop_tramadol": {10};
 		case "pop_desfibrilador": {5000};
 		case "pop_bolsadesangre": {10};
+		case "pop_oxigeno": {100};
 		case "pop_jarabe": {100};
 		case "pop_aguaoxigenada": {100};
 		case "pop_cajademedicamentos": {100};
@@ -127,11 +128,6 @@ if (_modo) then { // compra
 		case "V_Press_F": {2000};
 		case "Tv_Camera": {2000};
 		case "pop_correos": {5500};
-		case "soplete": {1500};
-		case "pop_granlingote": {1500};
-		case "pop_oxigeno": {1500};
-		case "pop_componentes": {1500};
-		case "pop_pintura": {1500};
 	};
 	_n = round (_n * desc); // aplicamos descuento, si lo hubiese
 } else { // venta
